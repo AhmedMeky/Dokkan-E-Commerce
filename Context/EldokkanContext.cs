@@ -1,5 +1,5 @@
 namespace ELDOKKAN.Context;
-public class AppContext : DbContext
+public class EldokkanContext : DbContext
 {
     // public AppContext(DbContextOptions<AppContext> options)
     //     : base(options)
@@ -9,7 +9,7 @@ public class AppContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            string connectionString = "I do not know";
+            string connectionString = "Data Source = . ; initial Catalog = Eldokkan ; integrated security = true ; encrypt = false";
             optionsBuilder.UseSqlServer(connectionString);
         }
         base.OnConfiguring(optionsBuilder);

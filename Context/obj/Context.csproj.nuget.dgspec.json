@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Eldokkan\\Context\\Context.csproj": {}
+    "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\Context.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Eldokkan\\Context\\Context.csproj": {
+    "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\Context\\Context.csproj",
+        "projectUniqueName": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\Context.csproj",
         "projectName": "Context",
-        "projectPath": "E:\\Projects\\Eldokkan\\Context\\Context.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\Context\\obj\\",
+        "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\Context.csproj",
+        "packagesPath": "C:\\Users\\CS\\.nuget\\packages\\",
+        "outputPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\CS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj"
+              "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj": {
+                "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj"
               }
             }
           }
@@ -52,6 +54,8 @@
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },
@@ -82,26 +86,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
+    "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\Models\\obj\\",
+        "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\CS\\.nuget\\packages\\",
+        "outputPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\CS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -140,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
