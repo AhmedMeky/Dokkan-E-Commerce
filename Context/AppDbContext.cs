@@ -1,3 +1,4 @@
+
 namespace ELDOKKAN.Context;
 public class AppDbContext : DbContext
 {
@@ -36,5 +37,6 @@ public class AppDbContext : DbContext
             .ApplyConfiguration<Order>(new OrderEntityTypeConfiguration())
             .ApplyConfiguration<Customer>(new CustomerEntityTypeConfiguration())
             .ApplyConfiguration<OrderDetails>(new OrderDetailsEntityTypeConfiguration());
+        base.OnModelCreating(modelBuilder);
     }
 }
