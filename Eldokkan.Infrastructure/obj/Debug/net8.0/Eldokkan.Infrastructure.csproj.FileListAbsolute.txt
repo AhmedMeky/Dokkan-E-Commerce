@@ -20,9 +20,25 @@ D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\E
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\refint\Eldokkan.Infrastructure.dll
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.pdb
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\ref\Eldokkan.Infrastructure.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Infrastructure.deps.json
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Infrastructure.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Infrastructure.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Context.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Application.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Dto.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Models.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Context.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Application.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Eldokkan.Dto.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\bin\Debug\net8.0\Models.pdb
 D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.csproj.AssemblyReference.cache
 D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.AssemblyInfoInputs.cache
 D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.AssemblyInfo.cs
 D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.csproj.CoreCompileInputs.cache
 D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.sourcelink.json
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.8ABD009C.Up2Date
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\refint\Eldokkan.Infrastructure.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\ref\Eldokkan.Infrastructure.dll
