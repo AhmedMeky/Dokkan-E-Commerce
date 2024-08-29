@@ -21,9 +21,10 @@ where TEntity : class
         return _dbSet.ToList();
     }
 
-    public void Add(TEntity entity)
+    public TEntity Add(TEntity entity)
     {
         _dbSet.Add(entity);
+        return entity;
     }
 
     public void Update(TEntity entity)
@@ -31,18 +32,19 @@ where TEntity : class
         _dbSet.Update(entity);
     }
 
-    public void Delete(int id)
+    public TEntity Delete(int id)
     {
         var entity = _dbSet.Find(id);
         if (entity != null)
         {
             _dbSet.Remove(entity);
         }
+        return entity;
     }
 
-    public void SaveChanges()
+    public int SaveChanges()
     {
-        _context.SaveChanges();
+        return _context.SaveChanges();
     }
 }
 
