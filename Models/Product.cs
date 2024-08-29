@@ -9,5 +9,5 @@ public class Product
 
     // navigation properties
     public virtual Category Category { get; set; }
-    public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+    public virtual ICollection<OrderDetails> OrderDetails { get; set; }
 }

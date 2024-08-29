@@ -1,5 +1,5 @@
 namespace ELDOKKAN.Models;
-public class OrderDetail
+public class OrderDetails
 {
     public int OrderID { get; set; }
     public int ProductID { get; set; }
