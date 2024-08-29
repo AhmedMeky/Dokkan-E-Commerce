@@ -61,12 +61,18 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "Eldokkan.Dto/1.0.0": {
         "runtime": {
-          "Eldokkan.Dto.dll": {}
+          "Eldokkan.Dto.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Models/1.0.0": {
         "runtime": {
-          "Models.dll": {}
+          "Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

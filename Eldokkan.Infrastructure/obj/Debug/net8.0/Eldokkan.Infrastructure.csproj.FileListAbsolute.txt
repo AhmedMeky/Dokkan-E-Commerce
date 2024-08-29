@@ -20,3 +20,9 @@ D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\E
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\refint\Eldokkan.Infrastructure.dll
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.pdb
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Infrastructure\obj\Debug\net8.0\ref\Eldokkan.Infrastructure.dll
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.csproj.AssemblyReference.cache
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.AssemblyInfoInputs.cache
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.AssemblyInfo.cs
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ITI\Advance C#\Project\Eldokkan.Infrastructure\obj\Debug\net8.0\Eldokkan.Infrastructure.sourcelink.json

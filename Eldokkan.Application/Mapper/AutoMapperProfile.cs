@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Eldokkan.Application.Mapper
 {
-    internal class AutoMapperProfile : Profile
+    public class AutoMapperProfile : Profile
     {
-        protected AutoMapperProfile()
+        public AutoMapperProfile()
         {
             CreateMap<CreateProductDtos , Product>().ReverseMap();
             CreateMap<GetAllProductDtos , Product>().ReverseMap();

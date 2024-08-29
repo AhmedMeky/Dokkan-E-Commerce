@@ -1,12 +1,14 @@
 ﻿using Autofac;
 using AutoMapper;
 using Eldokkan.Application.Service;
+using Eldokkan.Application.Mapper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IContainer = Autofac.IContainer;
 
 namespace Eldokkan.pl
 {

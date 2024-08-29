@@ -37,3 +37,12 @@ D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\Context.pdb
 D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\Context.genruntimeconfig.cache
 D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\ref\Context.dll
 >>>>>>> bahgat
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.csproj.AssemblyReference.cache
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.AssemblyInfoInputs.cache
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.AssemblyInfo.cs
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.csproj.CoreCompileInputs.cache
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.sourcelink.json
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.dll
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\refint\Context.dll
+D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.pdb

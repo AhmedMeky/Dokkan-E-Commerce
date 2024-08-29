@@ -13,7 +13,7 @@ namespace PL
 {
     public partial class Products : UserControl
     {
-        public IProductServices prodcutService = new ProductService();
+      //  public IProductServices prodcutService = new ProductService();
      
         public Products()
         {
