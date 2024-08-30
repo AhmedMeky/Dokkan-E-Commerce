@@ -3217,24 +3217,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dream\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\CS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\Eldokkan.Infrastructure\\Eldokkan.Infrastructure.csproj",
+      "projectUniqueName": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Infrastructure\\Eldokkan.Infrastructure.csproj",
       "projectName": "Eldokkan.Infrastructure",
-      "projectPath": "D:\\ITI\\Advance C#\\Project\\Eldokkan.Infrastructure\\Eldokkan.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI\\Advance C#\\Project\\Eldokkan.Infrastructure\\obj\\",
+      "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Infrastructure\\Eldokkan.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\CS\\.nuget\\packages\\",
+      "outputPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\CS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3248,11 +3243,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj": {
-              "projectPath": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj"
+            "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\Context.csproj": {
+              "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\Context.csproj"
             },
-            "D:\\ITI\\Advance C#\\Project\\Eldokkan.Application\\Eldokkan.Application.csproj": {
-              "projectPath": "D:\\ITI\\Advance C#\\Project\\Eldokkan.Application\\Eldokkan.Application.csproj"
+            "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Eldokkan.Application.csproj": {
+              "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Eldokkan.Application.csproj"
             }
           }
         }
@@ -3287,7 +3282,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

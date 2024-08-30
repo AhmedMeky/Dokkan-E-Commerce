@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Eldokkan.pl
-build_property.ProjectDir = D:\ITI\Advance C#\Project\PL\
+build_property.ProjectDir = D:\full-stack net Core\VS_C#\ElDokkan\PL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
