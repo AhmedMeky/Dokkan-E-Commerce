@@ -28,56 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            username = new TextBox();
-            password = new TextBox();
-            btnSign = new Button();
+            components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label3 = new Label();
-            Error = new Label();
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            tb_username = new Guna.UI2.WinForms.Guna2TextBox();
+            tb_password = new Guna.UI2.WinForms.Guna2TextBox();
+            btnSign = new Guna.UI2.WinForms.Guna2Button();
+            btn_signup = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(303, 264);
-            label1.Name = "label1";
-            label1.Size = new Size(57, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Password";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(300, 193);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Username";
-            // 
-            // username
-            // 
-            username.Location = new Point(228, 211);
-            username.Name = "username";
-            username.Size = new Size(220, 23);
-            username.TabIndex = 2;
-            // 
-            // password
-            // 
-            password.Location = new Point(228, 282);
-            password.Name = "password";
-            password.Size = new Size(220, 23);
-            password.TabIndex = 3;
-            password.UseSystemPasswordChar = true;
-            // 
-            // btnSign
-            // 
-            btnSign.Location = new Point(286, 327);
-            btnSign.Name = "btnSign";
-            btnSign.Size = new Size(102, 32);
-            btnSign.TabIndex = 4;
-            btnSign.Text = "Sign In";
-            btnSign.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -85,39 +51,119 @@
             label3.BackColor = SystemColors.ButtonHighlight;
             label3.Font = new Font("Segoe UI", 35F, FontStyle.Bold);
             label3.ForeColor = Color.SteelBlue;
-            label3.Location = new Point(204, 21);
+            label3.Location = new Point(94, 21);
             label3.Name = "label3";
-            label3.Size = new Size(268, 62);
+            label3.Size = new Size(334, 78);
             label3.TabIndex = 5;
             label3.Text = "ElDOKKAN";
             // 
-            // Error
+            // guna2BorderlessForm1
             // 
-            Error.AutoSize = true;
-            Error.BackColor = Color.Red;
-            Error.Font = new Font("PT Bold Arch", 30F);
-            Error.ForeColor = Color.Transparent;
-            Error.Location = new Point(153, 105);
-            Error.Name = "Error";
-            Error.Size = new Size(380, 71);
-            Error.TabIndex = 6;
-            Error.Text = "Inavalid Login";
-            Error.Visible = false;
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // tb_username
+            // 
+            tb_username.AccessibleDescription = "";
+            tb_username.CustomizableEdges = customizableEdges7;
+            tb_username.DefaultText = "User Name";
+            tb_username.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            tb_username.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            tb_username.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            tb_username.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            tb_username.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_username.Font = new Font("Segoe UI", 9F);
+            tb_username.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_username.Location = new Point(119, 151);
+            tb_username.Margin = new Padding(3, 4, 3, 4);
+            tb_username.Name = "tb_username";
+            tb_username.PasswordChar = '\0';
+            tb_username.PlaceholderText = "";
+            tb_username.SelectedText = "";
+            tb_username.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            tb_username.Size = new Size(286, 60);
+            tb_username.TabIndex = 6;
+            tb_username.MouseLeave += tb_username_mouseleave;
+            tb_username.MouseHover += tb_username_Click;
+            // 
+            // tb_password
+            // 
+            tb_password.AccessibleDescription = "ssdsd";
+            tb_password.CustomizableEdges = customizableEdges5;
+            tb_password.DefaultText = "Password";
+            tb_password.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            tb_password.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            tb_password.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            tb_password.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            tb_password.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_password.Font = new Font("Segoe UI", 9F);
+            tb_password.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            tb_password.Location = new Point(119, 234);
+            tb_password.Margin = new Padding(3, 4, 3, 4);
+            tb_password.Name = "tb_password";
+            tb_password.PasswordChar = '●';
+            tb_password.PlaceholderText = "";
+            tb_password.SelectedText = "";
+            tb_password.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            tb_password.Size = new Size(286, 60);
+            tb_password.TabIndex = 7;
+            tb_password.UseSystemPasswordChar = true;
+            tb_password.MouseLeave += tb_password_MouseLeave;
+            tb_password.MouseHover += tb_password_MouseHover;
+            // 
+            // btnSign
+            // 
+            btnSign.CustomizableEdges = customizableEdges3;
+            btnSign.DisabledState.BorderColor = Color.DarkGray;
+            btnSign.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSign.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSign.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSign.FillColor = Color.FromArgb(0, 192, 0);
+            btnSign.Font = new Font("Segoe UI", 9F);
+            btnSign.ForeColor = Color.White;
+            btnSign.Location = new Point(150, 317);
+            btnSign.Name = "btnSign";
+            btnSign.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnSign.Size = new Size(225, 56);
+            btnSign.TabIndex = 8;
+            btnSign.Text = "Login";
+            btnSign.Click += btnSign_Click_1;
+            // 
+            // btn_signup
+            // 
+            btn_signup.CustomizableEdges = customizableEdges1;
+            btn_signup.DisabledState.BorderColor = Color.DarkGray;
+            btn_signup.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_signup.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_signup.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_signup.FillColor = Color.Blue;
+            btn_signup.Font = new Font("Segoe UI", 9F);
+            btn_signup.ForeColor = Color.White;
+            btn_signup.Location = new Point(150, 396);
+            btn_signup.Name = "btn_signup";
+            btn_signup.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_signup.Size = new Size(225, 56);
+            btn_signup.TabIndex = 9;
+            btn_signup.Text = "SignUp";
+            btn_signup.Click += btn_signup_Click;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(Error);
-            Controls.Add(label3);
+            ClientSize = new Size(541, 482);
+            Controls.Add(btn_signup);
             Controls.Add(btnSign);
-            Controls.Add(password);
-            Controls.Add(username);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(tb_password);
+            Controls.Add(tb_username);
+            Controls.Add(label3);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            FormClosing += Login_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -126,10 +172,12 @@
 
         private Label label1;
         private Label label2;
-        private TextBox username;
         private TextBox password;
-        private Button btnSign;
         private Label label3;
-        private Label Error;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2TextBox tb_username;
+        protected Guna.UI2.WinForms.Guna2TextBox tb_password;
+        private Guna.UI2.WinForms.Guna2Button btnSign;
+        private Guna.UI2.WinForms.Guna2Button btn_signup;
     }
 }

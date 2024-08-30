@@ -22,5 +22,8 @@
     <Compile Update="Products.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
