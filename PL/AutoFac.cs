@@ -1,6 +1,10 @@
 ﻿using Autofac;
 using AutoMapper;
+using Eldokkan.Application.Contract;
+using Eldokkan.Application.Mapper;
 using Eldokkan.Application.Service;
+using Eldokkan.Infrastructure;
+using ELDOKKAN.Context;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,22 +16,25 @@ namespace Eldokkan.pl
 {
     public class AutoFac
     {
-        public static IContainer Inject()
+        public static Autofac.IContainer Inject()
         {
-            var Builder = new ContainerBuilder();
+            var builder = new ContainerBuilder();
 
-            Builder.RegisterType<ProductService>().As<IProductServices>();
 
-            Builder.Register(c => new MapperConfiguration(cfg =>
+            builder.RegisterType<ProductService>().As<IProductServices>().InstancePerLifetimeScope();
+            builder.RegisterType<ProductRepository>().As<IProductRepository>();
+            builder.RegisterType<EldokkanContext>().As<EldokkanContext>();
+
+            builder.Register(c => new MapperConfiguration(cfg =>
             {
                 // Register AutoMapper profile
-                cfg.AddProfile<AutoMapperProfile>();
+                cfg.AddProfile<AutoMapperPro>();
             }));//.AsSelf().SingleInstance();
 
-            Builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve)).As<Mapper>().InstancePerLifetimeScope();
+            builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve)).As<IMapper>().InstancePerLifetimeScope();
 
-            return Builder.Build();
-
+      
+            return builder.Build();
         }
     }
 

@@ -140,3 +140,11 @@ D:\full-stack net Core\VS_C#\ElDokkan\PL\obj\Debug\net8.0-windows\refint\Eldokka
 D:\full-stack net Core\VS_C#\ElDokkan\PL\obj\Debug\net8.0-windows\Eldokkan.pl.pdb
 D:\full-stack net Core\VS_C#\ElDokkan\PL\obj\Debug\net8.0-windows\Eldokkan.pl.genruntimeconfig.cache
 D:\full-stack net Core\VS_C#\ElDokkan\PL\obj\Debug\net8.0-windows\ref\Eldokkan.pl.dll
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Autofac.dll
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\AutoMapper.dll
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Eldokkan.Application.dll
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Eldokkan.Dto.dll
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Eldokkan.Infrastructure.dll
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Eldokkan.Application.pdb
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Eldokkan.Dto.pdb
+D:\full-stack net Core\VS_C#\ElDokkan\PL\bin\Debug\net8.0-windows\Eldokkan.Infrastructure.pdb

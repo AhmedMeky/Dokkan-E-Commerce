@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            CartList = new ListBox();
             SuspendLayout();
+            // 
+            // CartList
+            // 
+            CartList.FormattingEnabled = true;
+            CartList.ItemHeight = 15;
+            CartList.Location = new Point(3, 3);
+            CartList.Name = "CartList";
+            CartList.Size = new Size(369, 394);
+            CartList.TabIndex = 0;
             // 
             // Cart
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Orange;
+            Controls.Add(CartList);
             Name = "Cart";
             Size = new Size(600, 400);
+            Load += Cart_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private ListBox CartList;
     }
 }
