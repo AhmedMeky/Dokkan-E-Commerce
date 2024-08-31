@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .vs/
 .vs/Eldokkan/
 Context/obj/Debug/net8.0
@@ -5,3 +6,6 @@ Eldokkan.Application/obj/Debug/net8.0/
 Eldokkan.Dto/obj/Debug/net8.0/
 Eldokkan.Infrastructure/obj/Debug/net8.0/
 PL/obj/Debug/
+=======
+.vs/
+>>>>>>> am

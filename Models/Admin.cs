@@ -1,4 +1,5 @@
 namespace ELDOKKAN.Models;
+#nullable disable
 public class Admin
 {
     public int AdminID { get; set; }

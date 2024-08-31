@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Context", "Context\Context.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{AB081F7C-2165-47DE-AA27-7B976BF47209}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eldokkan.pl", "PL\Eldokkan.pl.csproj", "{C2BEB36A-5F1D-4223-9411-74F00979AD66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eldokkan.Application", "Eldokkan.Application\Eldokkan.Application.csproj", "{C5E8D0F4-B467-4E38-9898-7C198206CEAF}"
@@ -14,6 +15,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eldokkan.Dto", "Eldokkan.Dto\Eldokkan.Dto.csproj", "{E6A250EE-0D63-4D5A-BAD0-BA8F1D725834}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eldokkan.Infrastructure", "Eldokkan.Infrastructure\Eldokkan.Infrastructure.csproj", "{1C99A500-A94E-45E2-86F2-3D104D7650BC}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{660EBF0F-F489-4500-A8BB-3D94C7C85381}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRepositories", "IRepositories\IRepositories.csproj", "{54CE2A1E-BF9A-4932-A794-8CC9FAAB2B28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{6084AD49-C33C-4B13-B420-0B0FB4A2CFB6}"
+>>>>>>> am
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +37,7 @@ Global
 		{AB081F7C-2165-47DE-AA27-7B976BF47209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB081F7C-2165-47DE-AA27-7B976BF47209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB081F7C-2165-47DE-AA27-7B976BF47209}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{C2BEB36A-5F1D-4223-9411-74F00979AD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2BEB36A-5F1D-4223-9411-74F00979AD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2BEB36A-5F1D-4223-9411-74F00979AD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +54,20 @@ Global
 		{1C99A500-A94E-45E2-86F2-3D104D7650BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C99A500-A94E-45E2-86F2-3D104D7650BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C99A500-A94E-45E2-86F2-3D104D7650BC}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{660EBF0F-F489-4500-A8BB-3D94C7C85381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660EBF0F-F489-4500-A8BB-3D94C7C85381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660EBF0F-F489-4500-A8BB-3D94C7C85381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660EBF0F-F489-4500-A8BB-3D94C7C85381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CE2A1E-BF9A-4932-A794-8CC9FAAB2B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CE2A1E-BF9A-4932-A794-8CC9FAAB2B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CE2A1E-BF9A-4932-A794-8CC9FAAB2B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CE2A1E-BF9A-4932-A794-8CC9FAAB2B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6084AD49-C33C-4B13-B420-0B0FB4A2CFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6084AD49-C33C-4B13-B420-0B0FB4A2CFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6084AD49-C33C-4B13-B420-0B0FB4A2CFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6084AD49-C33C-4B13-B420-0B0FB4A2CFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> am
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
