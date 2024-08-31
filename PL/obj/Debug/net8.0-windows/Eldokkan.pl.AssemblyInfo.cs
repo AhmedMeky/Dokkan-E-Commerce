@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eldokkan.pl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd10afaa0a61e639822086da162d5263381a4436")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4eb3f4b00fe02503217ba9ab8e563e4639f1de55")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eldokkan.pl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eldokkan.pl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
