@@ -9,6 +9,6 @@ namespace Eldokkan.Application.Contract
 {
     public interface IProductRepository : IGenericRepository<Product>
     {
-      
+        public Product Search(string name); 
     }
 }

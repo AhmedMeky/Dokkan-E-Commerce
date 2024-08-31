@@ -12,11 +12,11 @@ namespace Eldokkan.Infrastructure
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private EldokkanContext context;
+        private AppDbContext context;
 
         public DbSet<T> dbSet;  
 
-        public GenericRepository(EldokkanContext _context)
+        public GenericRepository(AppDbContext _context)
         {
             context = _context;
             dbSet = _context.Set<T>();

@@ -14,8 +14,10 @@ namespace Eldokkan.Application.Mapper
     {
         public AutoMapperPro()
         {
-            CreateMap<CreateProductDtos , Product>().ReverseMap();
-            CreateMap<GetAllProductDtos , Product>().ReverseMap();
+
+            CreateMap<CreateProductDtos, Product>().ReverseMap();
+            CreateMap<GetAllProductDtos, Product>().ReverseMap();
         }
+
     }
 }

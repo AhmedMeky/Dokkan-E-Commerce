@@ -8,5 +8,5 @@ public class Order
 
     // navigation properties
     public virtual Customer Customer { get; set; }
-    public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+    public virtual ICollection<OrderDetails> OrderDetails { get; set; }
 }

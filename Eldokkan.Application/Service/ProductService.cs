@@ -40,6 +40,20 @@ namespace Eldokkan.Application.Service
 
         }
 
-      
+        public GetAllProductDtos Search(string name )
+        {
+            var productList = iproductRepository.Search(name);
+            return Mapper.Map<GetAllProductDtos>(productList);
+
+        }
+
+
+        public int  All_product_sum()
+        {
+          return iproductRepository.GetAll().ToList().Count();
+
+        }
+
+
     }
 }

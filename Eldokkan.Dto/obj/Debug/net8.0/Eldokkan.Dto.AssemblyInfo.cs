@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eldokkan.Dto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0f27b3a2dff58ed04372dc4f29b6bd8ddf7b2ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69d9e30e7407fb23b046cc3f69714f2a13a46bf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eldokkan.Dto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eldokkan.Dto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

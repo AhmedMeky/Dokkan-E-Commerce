@@ -10,3 +10,15 @@ D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Dto\obj\Debug\net8.0\refint\Eldokkan.Dto.dll
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.pdb
 D:\full-stack net Core\VS_C#\ElDokkan\Eldokkan.Dto\obj\Debug\net8.0\ref\Eldokkan.Dto.dll
+D:\ITI\Advance C#\Project\Eldokkan.Dto\bin\Debug\net8.0\Eldokkan.Dto.deps.json
+D:\ITI\Advance C#\Project\Eldokkan.Dto\bin\Debug\net8.0\Eldokkan.Dto.dll
+D:\ITI\Advance C#\Project\Eldokkan.Dto\bin\Debug\net8.0\Eldokkan.Dto.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.AssemblyInfoInputs.cache
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.AssemblyInfo.cs
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.csproj.CoreCompileInputs.cache
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.sourcelink.json
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.dll
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\refint\Eldokkan.Dto.dll
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\Eldokkan.Dto.pdb
+D:\ITI\Advance C#\Project\Eldokkan.Dto\obj\Debug\net8.0\ref\Eldokkan.Dto.dll

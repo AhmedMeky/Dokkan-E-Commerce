@@ -11,11 +11,17 @@ namespace Eldokkan.Infrastructure
 {
     public class ProductRepository :GenericRepository<Product> , IProductRepository
     {
-        private EldokkanContext context;
+        private AppDbContext context;
 
-        public ProductRepository(EldokkanContext _context) : base(_context)
+        public ProductRepository(AppDbContext _context) : base(_context)
         {
+            context = _context;
+        }
 
+       public  Product Search(string name)
+        {
+            return context.Products.FirstOrDefault(p => p.Name == name);
+           
         }
     }
 }

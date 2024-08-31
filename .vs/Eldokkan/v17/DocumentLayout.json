@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\products.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\products.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C99A500-A94E-45E2-86F2-3D104D7650BC}|Eldokkan.Infrastructure\\Eldokkan.Infrastructure.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\eldokkan.infrastructure\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C99A500-A94E-45E2-86F2-3D104D7650BC}|Eldokkan.Infrastructure\\Eldokkan.Infrastructure.csproj|solutionrelative:eldokkan.infrastructure\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\eldokkan.application\\contract\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|solutionrelative:eldokkan.application\\contract\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\eldokkan.application\\mapper\\automapperpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|solutionrelative:eldokkan.application\\mapper\\automapperpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\eldokkan.application\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|solutionrelative:eldokkan.application\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A250EE-0D63-4D5A-BAD0-BA8F1D725834}|Eldokkan.Dto\\Eldokkan.Dto.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\eldokkan.dto\\product\\getallproductdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A250EE-0D63-4D5A-BAD0-BA8F1D725834}|Eldokkan.Dto\\Eldokkan.Dto.csproj|solutionrelative:eldokkan.dto\\product\\getallproductdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\eldokkan.application\\service\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E8D0F4-B467-4E38-9898-7C198206CEAF}|Eldokkan.Application\\Eldokkan.Application.csproj|solutionrelative:eldokkan.application\\service\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +46,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrontEnd.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
+              "RelativeDocumentMoniker": "PL\\FrontEnd.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
+              "RelativeToolTip": "PL\\FrontEnd.cs",
+              "ViewState": "AQIAABwAAACAAAAAAAAwwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T15:13:17.522Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Infrastructure\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Eldokkan.Infrastructure\\ProductRepository.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Infrastructure\\ProductRepository.cs",
+              "RelativeToolTip": "Eldokkan.Infrastructure\\ProductRepository.cs",
+              "ViewState": "AQIAAA8AAACAmZmZmZkRwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:11:39.578Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -39,64 +82,91 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Cart.cs",
-              "RelativeDocumentMoniker": "PL\\Cart.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Cart.cs",
-              "RelativeToolTip": "PL\\Cart.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Contract\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Eldokkan.Application\\Contract\\IProductRepository.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Contract\\IProductRepository.cs",
+              "RelativeToolTip": "Eldokkan.Application\\Contract\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T23:39:22.827Z",
+              "WhenOpened": "2024-08-31T09:04:20.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cart.cs [Design]",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Cart.cs",
-              "RelativeDocumentMoniker": "PL\\Cart.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Cart.cs [Design]",
-              "RelativeToolTip": "PL\\Cart.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "FrontEnd.cs [Design]",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
+              "RelativeDocumentMoniker": "PL\\FrontEnd.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs [Design]",
+              "RelativeToolTip": "PL\\FrontEnd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T16:04:01.889Z",
+              "WhenOpened": "2024-08-30T20:02:23.864Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Products.Designer.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Products.Designer.cs",
-              "RelativeDocumentMoniker": "PL\\Products.Designer.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Products.Designer.cs",
-              "RelativeToolTip": "PL\\Products.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAArAAAA",
+              "DocumentIndex": 8,
+              "Title": "IProductServices.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Service\\IProductServices.cs",
+              "RelativeDocumentMoniker": "Eldokkan.Application\\Service\\IProductServices.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Service\\IProductServices.cs",
+              "RelativeToolTip": "Eldokkan.Application\\Service\\IProductServices.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T23:18:43.187Z",
+              "WhenOpened": "2024-08-30T21:58:22.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AutoMapperPro.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Mapper\\AutoMapperPro.cs",
-              "RelativeDocumentMoniker": "Eldokkan.Application\\Mapper\\AutoMapperPro.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Mapper\\AutoMapperPro.cs",
-              "RelativeToolTip": "Eldokkan.Application\\Mapper\\AutoMapperPro.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA8wA4AAAAOAAAA",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "Eldokkan.Application\\Service\\ProductService.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Application\\Service\\ProductService.cs",
+              "RelativeToolTip": "Eldokkan.Application\\Service\\ProductService.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAwwC0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T23:37:32.552Z"
+              "WhenOpened": "2024-08-31T08:40:02.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Products.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Products.cs",
-              "RelativeDocumentMoniker": "PL\\Products.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Products.cs",
-              "RelativeToolTip": "PL\\Products.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAIAAAA",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Program.cs",
+              "RelativeDocumentMoniker": "PL\\Program.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Program.cs",
+              "RelativeToolTip": "PL\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T23:22:53.544Z",
+              "WhenOpened": "2024-08-30T19:26:14.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllProductDtos.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Dto\\Product\\GetAllProductDtos.cs",
+              "RelativeDocumentMoniker": "Eldokkan.Dto\\Product\\GetAllProductDtos.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Dto\\Product\\GetAllProductDtos.cs",
+              "RelativeToolTip": "Eldokkan.Dto\\Product\\GetAllProductDtos.cs",
+              "ViewState": "AQIAAAYAAABgZmZmZmYkwA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T16:15:45.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T15:51:34.613Z",
               "EditorCaption": ""
             }
           ]

@@ -3,14 +3,17 @@ using AutoMapper;
 using Eldokkan.Application.Contract;
 using Eldokkan.Application.Mapper;
 using Eldokkan.Application.Service;
+
 using Eldokkan.Infrastructure;
 using ELDOKKAN.Context;
+using Eldokkan.Application.Mapper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IContainer = Autofac.IContainer;
 
 namespace Eldokkan.pl
 {
@@ -23,7 +26,7 @@ namespace Eldokkan.pl
 
             builder.RegisterType<ProductService>().As<IProductServices>().InstancePerLifetimeScope();
             builder.RegisterType<ProductRepository>().As<IProductRepository>();
-            builder.RegisterType<EldokkanContext>().As<EldokkanContext>();
+            builder.RegisterType<AppDbContext>().As<AppDbContext>();
 
             builder.Register(c => new MapperConfiguration(cfg =>
             {

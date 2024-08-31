@@ -1,7 +1,8 @@
 namespace ELDOKKAN.Models.EntityConfiguration;
-class CategoryConfiguration : IEntityTypeConfiguration<Category>
+class CategoryEntityTypeConfiguration : IEntityTypeConfiguration<Category>
 {
     public void Configure(EntityTypeBuilder<Category> builder)
     {
+        builder.HasKey(category => category.CategoryID);
     }
 }
