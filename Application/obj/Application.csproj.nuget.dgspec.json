@@ -1,42 +1,48 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Eldokkan\\Application\\Application.csproj": {}
+    "D:\\ITI\\Advance C#\\Project\\Application\\Application.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Eldokkan\\Application\\Application.csproj": {
+    "D:\\ITI\\Advance C#\\Project\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "E:\\Projects\\Eldokkan\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\Application\\obj\\",
+        "projectPath": "D:\\ITI\\Advance C#\\Project\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\Advance C#\\Project\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projects\\Eldokkan\\Context\\Context.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Context\\Context.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj"
               },
-              "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj"
+              "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj"
               },
-              "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj"
               },
-              "E:\\Projects\\Eldokkan\\Repositories\\Repositories.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Repositories\\Repositories.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -81,30 +87,36 @@
         }
       }
     },
-    "E:\\Projects\\Eldokkan\\Context\\Context.csproj": {
+    "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\Context\\Context.csproj",
+        "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj",
         "projectName": "Context",
-        "projectPath": "E:\\Projects\\Eldokkan\\Context\\Context.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\Context\\obj\\",
+        "projectPath": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj",
+        "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\Advance C#\\Project\\Context\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj"
               }
             }
           }
@@ -177,30 +189,36 @@
         }
       }
     },
-    "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj": {
+    "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj",
+        "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj",
         "projectName": "IRepositories",
-        "projectPath": "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\IRepositories\\obj\\",
+        "projectPath": "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj",
+        "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\Advance C#\\Project\\IRepositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj"
               }
             }
           }
@@ -239,22 +257,28 @@
         }
       }
     },
-    "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
+    "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\Models\\obj\\",
+        "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\Advance C#\\Project\\Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -297,36 +321,42 @@
         }
       }
     },
-    "E:\\Projects\\Eldokkan\\Repositories\\Repositories.csproj": {
+    "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eldokkan\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "E:\\Projects\\Eldokkan\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Mekky\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eldokkan\\Repositories\\obj\\",
+        "projectPath": "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\Advance C#\\Project\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Mekky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projects\\Eldokkan\\Context\\Context.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Context\\Context.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj"
               },
-              "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\IRepositories\\IRepositories.csproj"
+              "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj"
               },
-              "E:\\Projects\\Eldokkan\\Models\\Models.csproj": {
-                "projectPath": "E:\\Projects\\Eldokkan\\Models\\Models.csproj"
+              "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj"
               }
             }
           }
