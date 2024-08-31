@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Context\Context.csproj" />
-    <ProjectReference Include="..\Eldokkan.Application\Eldokkan.Application.csproj" />
   </ItemGroup>
 
 </Project>

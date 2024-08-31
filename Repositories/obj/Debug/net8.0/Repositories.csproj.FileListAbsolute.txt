@@ -38,3 +38,4 @@ D:\ITI\Advance C#\Project\Repositories\obj\Debug\net8.0\Repositories.dll
 D:\ITI\Advance C#\Project\Repositories\obj\Debug\net8.0\refint\Repositories.dll
 D:\ITI\Advance C#\Project\Repositories\obj\Debug\net8.0\Repositories.pdb
 D:\ITI\Advance C#\Project\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+D:\ITI\Advance C#\Project\Repositories\bin\Debug\net8.0\Context.dll.config

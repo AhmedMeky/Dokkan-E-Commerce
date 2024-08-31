@@ -16,3 +16,4 @@ D:\ITI\Advance C#\Project\Context\bin\Debug\net8.0\Models.pdb
 D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.csproj.Up2Date
 D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.genruntimeconfig.cache
 D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\ref\Context.dll
+D:\ITI\Advance C#\Project\Context\bin\Debug\net8.0\Context.dll.config

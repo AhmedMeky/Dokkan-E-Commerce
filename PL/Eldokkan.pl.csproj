@@ -24,10 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Context\Context.csproj" />
-    <ProjectReference Include="..\Eldokkan.Application\Eldokkan.Application.csproj" />
-    <ProjectReference Include="..\Eldokkan.Dto\Eldokkan.Dto.csproj" />
-    <ProjectReference Include="..\Eldokkan.Infrastructure\Eldokkan.Infrastructure.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 

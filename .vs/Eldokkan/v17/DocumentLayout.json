@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\ITI\\Advance C#\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\obj\\debug\\net8.0\\context.csproj.filelistabsolute.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\obj\\debug\\net8.0\\context.csproj.filelistabsolute.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\migrations\\20240831212328_create database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\migrations\\20240831212328_create database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Context.csproj.FileListAbsolute.txt",
-              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\obj\\Debug\\net8.0\\Context.csproj.FileListAbsolute.txt",
-              "RelativeDocumentMoniker": "Context\\obj\\Debug\\net8.0\\Context.csproj.FileListAbsolute.txt",
-              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\obj\\Debug\\net8.0\\Context.csproj.FileListAbsolute.txt",
-              "RelativeToolTip": "Context\\obj\\Debug\\net8.0\\Context.csproj.FileListAbsolute.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-31T18:23:10.588Z",
+              "Title": "20240831212328_create database.cs",
+              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\Migrations\\20240831212328_create database.cs",
+              "RelativeDocumentMoniker": "Context\\Migrations\\20240831212328_create database.cs",
+              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\Migrations\\20240831212328_create database.cs",
+              "RelativeToolTip": "Context\\Migrations\\20240831212328_create database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T21:23:28.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "Context\\GlobalUsing.cs",
+              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\GlobalUsing.cs",
+              "RelativeToolTip": "Context\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T19:58:56.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T19:28:40.616Z",
               "EditorCaption": ""
             }
           ]

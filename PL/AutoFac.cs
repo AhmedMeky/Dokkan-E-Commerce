@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using AutoMapper;
-using Eldokkan.Application.Service;
-using Eldokkan.Application.Mapper;
+ 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IContainer = Autofac.IContainer;
+using ELDOKKAN.Application.Services;
+using ELDOKKAN.Application.Mapper;
 
 namespace Eldokkan.pl
 {
@@ -18,7 +19,7 @@ namespace Eldokkan.pl
         {
             var Builder = new ContainerBuilder();
 
-            Builder.RegisterType<ProductService>().As<IProductServices>();
+            Builder.RegisterType<ProductService>().As<IProductService>();
 
             Builder.Register(c => new MapperConfiguration(cfg =>
             {

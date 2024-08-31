@@ -42,3 +42,4 @@ D:\ITI\Advance C#\Project\Application\obj\Debug\net8.0\Application.dll
 D:\ITI\Advance C#\Project\Application\obj\Debug\net8.0\refint\Application.dll
 D:\ITI\Advance C#\Project\Application\obj\Debug\net8.0\Application.pdb
 D:\ITI\Advance C#\Project\Application\obj\Debug\net8.0\ref\Application.dll
+D:\ITI\Advance C#\Project\Application\bin\Debug\net8.0\Context.dll.config

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eldokkan.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4407dc1229cca1fc70c8544af8b3fcfc44c52cef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72b5068a821783dfb59071f2785371109d4f1f24")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eldokkan.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eldokkan.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

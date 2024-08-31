@@ -266,14 +266,8 @@ D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\runtimes\win-x64\native\We
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Context.dll
-D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Eldokkan.Application.dll
-D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Eldokkan.Dto.dll
-D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Eldokkan.Infrastructure.dll
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Models.dll
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Context.pdb
-D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Eldokkan.Application.pdb
-D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Eldokkan.Dto.pdb
-D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Eldokkan.Infrastructure.pdb
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Models.pdb
 D:\ITI\Advance C#\Project\PL\obj\Debug\net8.0-windows\Eldokkan.pl.csproj.AssemblyReference.cache
 D:\ITI\Advance C#\Project\PL\obj\Debug\net8.0-windows\PL.About.resources
@@ -300,3 +294,10 @@ D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Guna.UI2.dll
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\System.Management.dll
 D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
 D:\ITI\Advance C#\Project\PL\obj\Debug\net8.0-windows\Eldokkan.pl.SignUp.resources
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Application.dll
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\IRepositories.dll
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Repositories.dll
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Application.pdb
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\IRepositories.pdb
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Repositories.pdb
+D:\ITI\Advance C#\Project\PL\bin\Debug\net8.0-windows\Context.dll.config
