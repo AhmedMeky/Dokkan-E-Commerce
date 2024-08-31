@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eldokkan.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48dc9008519e7bfd55929e0aeb5cb2ce8aca216e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3dab2b41f578cd394664d1fbd7b089ac810c193c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eldokkan.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eldokkan.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
