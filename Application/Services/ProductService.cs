@@ -32,6 +32,14 @@ public class ProductService : IProductService
         return getAllProductDto;
     }
 
+    public IQueryable<GetAllProductDTO> GetProductByName(string ProductName)
+    {
+        if(ProductName == null)
+            return null!;
+            
+        return repository.SearchByName(ProductName).Select(p => mapper.Map<GetAllProductDTO>(p));
+    }
+
     public IEnumerable<GetAllProductDTO> GetAllProducts()
     {
         return repository.GetAll().Select(ad => mapper.Map<GetAllProductDTO>(ad));

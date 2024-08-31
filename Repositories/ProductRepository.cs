@@ -5,7 +5,7 @@ public class ProductRepository : Repository<Product> , IProductRepository
     {
     }
 
-    public IEnumerable<Product> SearchByName(string productName)
+    public IQueryable<Product> SearchByName(string productName)
     {
         return _context.Products.Where(
                     p => p.Name.ToLower().Equals(productName.ToLower()));
