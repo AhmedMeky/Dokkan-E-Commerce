@@ -4,6 +4,8 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
     public void Configure(EntityTypeBuilder<Order> builder)
     {
         builder.HasKey(o => o.OrderID);
+
+        builder.Property(o => o.OrderDate).HasDefaultValueSql("GETDATE()");
         
         builder.HasMany(o => o.OrderDetails)
             .WithOne(od => od.Order)

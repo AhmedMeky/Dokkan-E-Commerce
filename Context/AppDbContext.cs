@@ -18,7 +18,7 @@ public class AppDbContext : DbContext
     {
         var configuration = new ConfigurationBuilder()
                 .SetBasePath(AppContext.BaseDirectory)
-                .AddJsonFile("./AppSettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile(@"E:\Projects\Eldokkan\Context\AppSettings.json", optional: false, reloadOnChange: true)
                 .Build();
 
         string connectionString = configuration.GetConnectionString("DefaultConnection")!;
