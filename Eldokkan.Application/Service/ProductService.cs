@@ -40,7 +40,14 @@ namespace Eldokkan.Application.Service
 
         }
 
-        public GetAllProductDtos Search(string name )
+        public List<GetAllProductDtos> Get_All()
+        {
+            var productList = iproductRepository.GetAll().Select(p => new GetAllProductDtos { Name = p.Name, UnitPrice = p.UnitPrice, CategoryID = p.CategoryID }).ToList();
+            return productList;
+
+        }
+
+        public GetAllProductDtos Search(string name ) // search on Elements to Get one Element
         {
             var productList = iproductRepository.Search(name);
             return Mapper.Map<GetAllProductDtos>(productList);

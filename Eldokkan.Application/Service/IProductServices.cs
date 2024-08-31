@@ -16,5 +16,8 @@ namespace Eldokkan.Application.Service
         public int All_product_sum();
 
         public GetAllProductDtos Search(string name);
+
+        public List<GetAllProductDtos> Get_All();
+        
     }
 }

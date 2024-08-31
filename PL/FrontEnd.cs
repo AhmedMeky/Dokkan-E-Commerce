@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,8 @@ namespace PL
 
     public partial class FrontEnd : Form
     {
-
-
+        IContainer Container = AutoFac.Inject();
+        IProductServices productservice;
         private int currentPage;
         int size;
 
@@ -33,22 +34,11 @@ namespace PL
         {
             InitializeComponent();
             CartList = new List<GetAllProductDtos>();
-            IContainer Container = AutoFac.Inject();
-            IProductServices p = Container.Resolve<IProductServices>();
-
-            size = (p.All_product_sum() / 9) + 1;
+            productservice = Container.Resolve<IProductServices>();
+            size = (productservice.All_product_sum() / 9) + 1;
             currentPage = 1;
 
         }
-
-
-        private void proTab_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
         private void AddToCartButton_Click(object? sender, EventArgs e)
         {
             if (sender is Button button)
@@ -68,8 +58,6 @@ namespace PL
 
         private void loadElements(int PageNum)
         {
-            var Container = AutoFac.Inject();
-            IProductServices productservice = Container.Resolve<IProductServices>();
             foreach (var item in productservice.GetPagination(9, PageNum))
             {
                 GroupBox g1 = new GroupBox();
@@ -108,8 +96,6 @@ namespace PL
 
         private void LoadOneElement(string nama)
         {
-            var Container = AutoFac.Inject();
-            IProductServices productservice = Container.Resolve<IProductServices>();
             var item = productservice.Search(nama);
 
             if (item != null)
@@ -153,7 +139,6 @@ namespace PL
         {
             if (Front.SelectedIndex == 1) // Adjust index as needed
             {
-                // Refresh the data source of the DataGridView to show the updated CartList
                 CardGrid.DataSource = null; // Clear the previous binding
                 CardGrid.DataSource = CartList; // Set the new data source
                 CardGrid.Refresh(); // Refresh to apply the new data
@@ -164,28 +149,7 @@ namespace PL
         private void Update_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (PrdBindingSource == null)
-            {
-                PrdBindingSource = new BindingSource(CartList, "");
-                bindingNavigator = new BindingNavigator(PrdBindingSource);
-                UpdateProName.Controls.Add(bindingNavigator);
-                bindingNavigator.Dock = DockStyle.Top;
 
-                //simple Data Binding 
-                ProUpdate.DataSource = CartList;  // not carTlist but all product 
-                ProUpdate.DisplayMember = "Name";
-                ProUpdate.ValueMember = "Name";
-
-                ProUpdate.DataBindings.Add("SelectedValue", PrdBindingSource, "Name");
-                ProPrice.DataBindings.Add("Text", PrdBindingSource, "UnitPrice");
-
-            }
-
-        }
-
-
-        private void UpdateBtn_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -228,10 +192,11 @@ namespace PL
 
         private void searhBtn_Click(object sender, EventArgs e)
         {
-            if(SearchText.Text != string.Empty) { 
-            string name = SearchText.Text;
-            flowProLayout.Controls.Clear();
-            LoadOneElement(name);
+            if (SearchText.Text != string.Empty)
+            {
+                string name = SearchText.Text;
+                flowProLayout.Controls.Clear();
+                LoadOneElement(name);
             }
         }
 
@@ -242,6 +207,87 @@ namespace PL
                 flowProLayout.Controls.Clear();
                 loadElements(1);
             }
+        }
+
+        private void CartNext_Click(object sender, EventArgs e)
+        {
+            PrdBindingSource.MoveNext();
+        }
+
+        private void CartPrev_Click(object sender, EventArgs e)
+        {
+            PrdBindingSource.MovePrevious();
+        }
+
+        private void DeleteCart_Click(object sender, EventArgs e)
+        {
+            string name = this.ProUpdate.SelectedValue.ToString();
+            var p = CartList.FirstOrDefault(x => x.Name == name);
+            if (p != null)
+            {
+                CartList.Remove(p);
+                CartDetailes.Controls.Clear();
+                var caGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+                CartDetailes.Controls.Add(caGrid);
+                caGrid.DataSource = CartList;
+                caGrid.ReadOnly = true;
+                caGrid.Size = CartDetailes.Size;
+                PrdBindingSource.DataSource = CartList;
+                ProUpdate.Refresh();
+
+
+                foreach (var c in CartList)
+                {
+                    Debug.WriteLine(c.Name);
+                }
+            }
+
+
+        }
+
+        private void Update_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (PrdBindingSource == null)
+            {
+                PrdBindingSource = new BindingSource(CartList, "");
+
+                ProUpdate.DataSource = productservice.Get_All();
+                ProUpdate.DisplayMember = "Name";
+                ProUpdate.ValueMember = "Name";
+
+                ProUpdate.DataBindings.Add("SelectedValue", PrdBindingSource, "Name");
+                LabelName.DataBindings.Add("Text", PrdBindingSource, "Name");
+                ProPrice.DataBindings.Add("Text", PrdBindingSource, "UnitPrice");
+
+
+                CardGrid.Refresh();
+            }
+
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            // finish this code to Update
+
+            var oldProduct = CartList.Where(p => p.Name == LabelName.Text).FirstOrDefault();
+
+            var NewProductName = ProUpdate.SelectedValue.ToString();
+
+            var newProduct = CartList.Where(p => p.Name == NewProductName).FirstOrDefault();
+           
+            ProPrice.Text = newProduct.UnitPrice.ToString();
+
+            CartList.Remove(oldProduct);
+            CartList.Add(newProduct);
+
+          
+            CardGrid.DataSource = null; // Reset DataSource to refresh DataGridView
+            CardGrid.DataSource = CartList;
+        }
+
+        private void ProUpdate_SelectedValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
