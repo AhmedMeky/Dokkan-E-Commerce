@@ -1,5 +1,5 @@
 namespace ELDOKKAN.Repositories;
 public interface IProductRepository : IRepository<Product>
 {
-    IEnumerable<Product> SearchByName(string productName);
+    IQueryable<Product> SearchByName(string productName);
 }

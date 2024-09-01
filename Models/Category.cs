@@ -1,5 +1,5 @@
 namespace ELDOKKAN.Models;
-
+#nullable disable
 public class Category
 {
     public int CategoryID { get; set; }

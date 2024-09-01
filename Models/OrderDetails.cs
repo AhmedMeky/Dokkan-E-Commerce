@@ -1,4 +1,5 @@
 namespace ELDOKKAN.Models;
+#nullable disable
 public class OrderDetails
 {
     public int OrderID { get; set; }
