@@ -24,11 +24,10 @@ public class AppDbContext : DbContext
     {
         var configuration = new ConfigurationBuilder()
                 .SetBasePath(AppContext.BaseDirectory)
-<<<<<<< HEAD
+
                 .AddJsonFile("AppSettings.json", optional: false, reloadOnChange: true)
-=======
-                .AddJsonFile(@"D:\ITI\Advance C#\Project\Context\AppSettings.json", optional: false, reloadOnChange: true)
->>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
+
+                .AddJsonFile(@"AppSettings.json", optional: false, reloadOnChange: true)
                 .Build();
 
 

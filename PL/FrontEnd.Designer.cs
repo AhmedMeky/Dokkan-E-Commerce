@@ -36,13 +36,11 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -51,6 +49,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Front = new Guna.UI2.WinForms.Guna2TabControl();
             proTab = new TabPage();
             searhBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -75,6 +77,7 @@
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             tabPage3 = new TabPage();
+            OrderDetailes = new Guna.UI2.WinForms.Guna2Button();
             Front.SuspendLayout();
             proTab.SuspendLayout();
             CartTab.SuspendLayout();
@@ -216,6 +219,7 @@
             // 
             // CartTab
             // 
+            CartTab.Controls.Add(OrderDetailes);
             CartTab.Controls.Add(BillBtn);
             CartTab.Controls.Add(Update);
             CartTab.Location = new Point(184, 4);
@@ -228,16 +232,16 @@
             // 
             // BillBtn
             // 
-            BillBtn.CustomizableEdges = customizableEdges9;
+            BillBtn.CustomizableEdges = customizableEdges11;
             BillBtn.DisabledState.BorderColor = Color.DarkGray;
             BillBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             BillBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             BillBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             BillBtn.Font = new Font("Segoe UI", 9F);
             BillBtn.ForeColor = Color.White;
-            BillBtn.Location = new Point(469, 478);
+            BillBtn.Location = new Point(469, 475);
             BillBtn.Name = "BillBtn";
-            BillBtn.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            BillBtn.ShadowDecoration.CustomizableEdges = customizableEdges12;
             BillBtn.Size = new Size(180, 45);
             BillBtn.TabIndex = 1;
             BillBtn.Text = "Finilize Your Bill";
@@ -348,7 +352,7 @@
             // 
             // CartPrev
             // 
-            CartPrev.CustomizableEdges = customizableEdges11;
+            CartPrev.CustomizableEdges = customizableEdges13;
             CartPrev.DisabledState.BorderColor = Color.DarkGray;
             CartPrev.DisabledState.CustomBorderColor = Color.DarkGray;
             CartPrev.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -357,7 +361,7 @@
             CartPrev.ForeColor = Color.White;
             CartPrev.Location = new Point(71, 170);
             CartPrev.Name = "CartPrev";
-            CartPrev.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            CartPrev.ShadowDecoration.CustomizableEdges = customizableEdges14;
             CartPrev.Size = new Size(39, 25);
             CartPrev.TabIndex = 9;
             CartPrev.Text = "<";
@@ -365,16 +369,16 @@
             // 
             // CartNext
             // 
-            CartNext.CustomizableEdges = customizableEdges13;
+            CartNext.CustomizableEdges = customizableEdges15;
             CartNext.DisabledState.BorderColor = Color.DarkGray;
             CartNext.DisabledState.CustomBorderColor = Color.DarkGray;
             CartNext.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             CartNext.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             CartNext.Font = new Font("Segoe UI", 9F);
             CartNext.ForeColor = Color.White;
-            CartNext.Location = new Point(136, 170);
+            CartNext.Location = new Point(146, 170);
             CartNext.Name = "CartNext";
-            CartNext.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            CartNext.ShadowDecoration.CustomizableEdges = customizableEdges16;
             CartNext.Size = new Size(39, 25);
             CartNext.TabIndex = 8;
             CartNext.Text = ">";
@@ -382,16 +386,16 @@
             // 
             // DeleteCart
             // 
-            DeleteCart.CustomizableEdges = customizableEdges15;
+            DeleteCart.CustomizableEdges = customizableEdges17;
             DeleteCart.DisabledState.BorderColor = Color.DarkGray;
             DeleteCart.DisabledState.CustomBorderColor = Color.DarkGray;
             DeleteCart.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             DeleteCart.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             DeleteCart.Font = new Font("Segoe UI", 9F);
             DeleteCart.ForeColor = Color.White;
-            DeleteCart.Location = new Point(270, 170);
+            DeleteCart.Location = new Point(155, 221);
             DeleteCart.Name = "DeleteCart";
-            DeleteCart.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            DeleteCart.ShadowDecoration.CustomizableEdges = customizableEdges18;
             DeleteCart.Size = new Size(118, 25);
             DeleteCart.TabIndex = 7;
             DeleteCart.Text = "Delete";
@@ -400,7 +404,7 @@
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(215, 84);
+            guna2HtmlLabel3.Location = new Point(236, 84);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(9, 17);
             guna2HtmlLabel3.TabIndex = 6;
@@ -417,16 +421,16 @@
             // 
             // UpdateBtn
             // 
-            UpdateBtn.CustomizableEdges = customizableEdges17;
+            UpdateBtn.CustomizableEdges = customizableEdges19;
             UpdateBtn.DisabledState.BorderColor = Color.DarkGray;
             UpdateBtn.DisabledState.CustomBorderColor = Color.DarkGray;
             UpdateBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             UpdateBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             UpdateBtn.Font = new Font("Segoe UI", 9F);
             UpdateBtn.ForeColor = Color.White;
-            UpdateBtn.Location = new Point(270, 128);
+            UpdateBtn.Location = new Point(3, 221);
             UpdateBtn.Name = "UpdateBtn";
-            UpdateBtn.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            UpdateBtn.ShadowDecoration.CustomizableEdges = customizableEdges20;
             UpdateBtn.Size = new Size(118, 25);
             UpdateBtn.TabIndex = 4;
             UpdateBtn.Text = "Update";
@@ -435,7 +439,7 @@
             // ProUpdate
             // 
             ProUpdate.BackColor = Color.Transparent;
-            ProUpdate.CustomizableEdges = customizableEdges19;
+            ProUpdate.CustomizableEdges = customizableEdges21;
             ProUpdate.DrawMode = DrawMode.OwnerDrawFixed;
             ProUpdate.DropDownStyle = ComboBoxStyle.DropDownList;
             ProUpdate.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -443,17 +447,16 @@
             ProUpdate.Font = new Font("Segoe UI", 10F);
             ProUpdate.ForeColor = Color.FromArgb(68, 88, 112);
             ProUpdate.ItemHeight = 30;
-            ProUpdate.Location = new Point(264, 36);
+            ProUpdate.Location = new Point(258, 159);
             ProUpdate.Name = "ProUpdate";
-            ProUpdate.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            ProUpdate.ShadowDecoration.CustomizableEdges = customizableEdges22;
             ProUpdate.Size = new Size(140, 36);
             ProUpdate.TabIndex = 3;
-            ProUpdate.SelectedValueChanged += ProUpdate_SelectedValueChanged;
             // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Location = new Point(18, 84);
+            guna2HtmlLabel2.Location = new Point(36, 84);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(74, 17);
             guna2HtmlLabel2.TabIndex = 1;
@@ -462,7 +465,7 @@
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(12, 36);
+            guna2HtmlLabel1.Location = new Point(30, 36);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(80, 17);
             guna2HtmlLabel1.TabIndex = 0;
@@ -477,6 +480,23 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // OrderDetailes
+            // 
+            OrderDetailes.CustomizableEdges = customizableEdges9;
+            OrderDetailes.DisabledState.BorderColor = Color.DarkGray;
+            OrderDetailes.DisabledState.CustomBorderColor = Color.DarkGray;
+            OrderDetailes.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            OrderDetailes.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            OrderDetailes.Font = new Font("Segoe UI", 9F);
+            OrderDetailes.ForeColor = Color.White;
+            OrderDetailes.Location = new Point(469, 30);
+            OrderDetailes.Name = "OrderDetailes";
+            OrderDetailes.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            OrderDetailes.Size = new Size(180, 45);
+            OrderDetailes.TabIndex = 2;
+            OrderDetailes.Text = "Order Detailes";
+            OrderDetailes.Click += OrderDetailes_Click;
             // 
             // FrontEnd
             // 
@@ -524,5 +544,6 @@
         private Guna.UI2.WinForms.Guna2Button CartNext;
         private Guna.UI2.WinForms.Guna2Button DeleteCart;
         private Guna.UI2.WinForms.Guna2HtmlLabel LabelName;
+        private Guna.UI2.WinForms.Guna2Button OrderDetailes;
     }
 }

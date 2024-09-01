@@ -12,15 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Context.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-<<<<<<<< HEAD:Context/Migrations/20240831220355_initialCreate.Designer.cs
     [Migration("20240831220355_initialCreate")]
-    partial class initialCreate
-========
-    [Migration("20240831212328_create database")]
+   
     partial class createdatabase
->>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1:Context/Migrations/20240831212328_create database.Designer.cs
     {
-        /// <inheritdoc />
+        
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618

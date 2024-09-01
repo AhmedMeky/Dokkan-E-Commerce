@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28f6135f137997558f0c6f0a17aef0c02350499f")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72b5068a821783dfb59071f2785371109d4f1f24")]
 >>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+989473fcd69059107df8ab80ef97ca6f8c55a7b1")]
+>>>>>>> e769022b43b129c4642a5e9dcd0f50963290f028
 [assembly: System.Reflection.AssemblyProductAttribute("Eldokkan.pl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eldokkan.pl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

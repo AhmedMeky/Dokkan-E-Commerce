@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "98ezamxfIXPUiIGPiOvvr9iMgS6TIes0bdYaK4Z28cc8HB+mNHMfvoEmRnvm3NWWGER/nz2EA5mgCHUxHpqTgw==",
-=======
-  "dgSpecHash": "FDWJzhOhTkI=",
->>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
   "success": true,
   "projectFilePath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\PL.csproj",
   "expectedPackageFiles": [

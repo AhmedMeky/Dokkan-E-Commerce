@@ -4,12 +4,5 @@
   "success": true,
   "projectFilePath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\IRepositories\\IRepositories.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\full-stack net Core\\VS_C#\\ElDokkan\\IRepositories\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

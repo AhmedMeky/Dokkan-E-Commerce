@@ -43,6 +43,7 @@
             tb_password = new Guna.UI2.WinForms.Guna2TextBox();
             btnSign = new Guna.UI2.WinForms.Guna2Button();
             btn_signup = new Guna.UI2.WinForms.Guna2Button();
+            guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             SuspendLayout();
             // 
             // label3
@@ -148,6 +149,15 @@
             btn_signup.Text = "SignUp";
             btn_signup.Click += btn_signup_Click;
             // 
+            // guna2MessageDialog1
+            // 
+            guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            guna2MessageDialog1.Caption = null;
+            guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
+            guna2MessageDialog1.Parent = null;
+            guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            guna2MessageDialog1.Text = null;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -179,5 +189,6 @@
         protected Guna.UI2.WinForms.Guna2TextBox tb_password;
         private Guna.UI2.WinForms.Guna2Button btnSign;
         private Guna.UI2.WinForms.Guna2Button btn_signup;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
     }
 }

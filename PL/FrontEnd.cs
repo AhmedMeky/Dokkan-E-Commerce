@@ -2,6 +2,8 @@
 using Eldokkan.pl;
 using ELDOKKAN.Application.DTOs.Customer;
 using ELDOKKAN.Application.Services;
+using ELDOKKAN.Models;
+using Guna.Charts.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,8 +24,11 @@ namespace PL
     {
         IContainer Container = AutoFac.Inject();
         IProductService productservice;
+        IOrderService OrderService;
+        IOrderDetailsService OrderDetsService;
         private int currentPage;
         int size;
+        public int CustomerID { get; set; } = 1;
 
 
 
@@ -34,8 +39,15 @@ namespace PL
         {
             InitializeComponent();
             CartList = new List<GetAllProductDTO>();
+
             productservice = Container.Resolve<IProductService>();
+
+            OrderService = Container.Resolve<IOrderService>();
+
+            OrderDetsService = Container.Resolve<IOrderDetailsService>();
+
             size = (productservice.GetAllProducts().Count() / 9) + 1;
+
             currentPage = 1;
 
         }
@@ -142,6 +154,11 @@ namespace PL
                 CardGrid.DataSource = null; // Clear the previous binding
                 CardGrid.DataSource = CartList; // Set the new data source
                 CardGrid.Refresh(); // Refresh to apply the new data
+                CardGrid.Columns[0].Visible = false;
+                CardGrid.Columns[2].Visible = false;
+                CardGrid.Columns[4].Visible = false;
+
+
             }
         }
 
@@ -153,22 +170,6 @@ namespace PL
 
         }
 
-        private void BillBtn_Click(object sender, EventArgs e)
-        {
-            decimal? price = 0;
-            foreach (var item in CartList)
-            {
-                if (price != null)
-                    price += item.UnitPrice;
-            }
-            DialogResult massege = MessageBox.Show($"Your Bill = {price}$ ");
-
-            if (massege == DialogResult.OK)
-            {
-                // Insert the order 
-
-            }
-        }
 
         private void moveNext_Click(object sender, EventArgs e)
         {
@@ -232,6 +233,10 @@ namespace PL
                 caGrid.DataSource = CartList;
                 caGrid.ReadOnly = true;
                 caGrid.Size = CartDetailes.Size;
+                caGrid.Columns[0].Visible = false;
+                caGrid.Columns[2].Visible = false;
+                caGrid.Columns[4].Visible = false;
+
                 PrdBindingSource.DataSource = CartList;
                 ProUpdate.Refresh();
 
@@ -251,10 +256,10 @@ namespace PL
             {
                 PrdBindingSource = new BindingSource(CartList, "");
 
-                ProUpdate.DataSource = productservice.GetAllProducts();
+                ProUpdate.DataSource = productservice.GetAllProducts().ToList();
                 ProUpdate.DisplayMember = "Name";
                 ProUpdate.ValueMember = "Name";
-               // ProUpdate.DataBindings.Add("SelectedValue", PrdBindingSource, "Name");
+                // ProUpdate.DataBindings.Add("SelectedValue", PrdBindingSource, "Name");
 
                 LabelName.DataBindings.Add("Text", PrdBindingSource, "Name");
                 ProPrice.DataBindings.Add("Text", PrdBindingSource, "UnitPrice");
@@ -272,22 +277,63 @@ namespace PL
             var oldProduct = CartList.Where(p => p.Name == LabelName.Text).FirstOrDefault();
 
             var NewProductName = ProUpdate.SelectedValue.ToString();
+            LabelName.Text = ProUpdate.SelectedValue.ToString();
 
             var newProduct = productservice.GetAllProducts().Where(p => p.Name == NewProductName).FirstOrDefault();
-           
+
             ProPrice.Text = newProduct.UnitPrice.ToString();
 
             CartList.Remove(oldProduct);
             CartList.Add(newProduct);
 
-          
+
             CardGrid.DataSource = null; // Reset DataSource to refresh DataGridView
             CardGrid.DataSource = CartList;
+            CardGrid.Columns[0].Visible = false;
+            CardGrid.Columns[2].Visible = false;
+            CardGrid.Columns[4].Visible = false;
         }
 
-        private void ProUpdate_SelectedValueChanged(object sender, EventArgs e)
+        private void OrderDetailes_Click(object sender, EventArgs e)
         {
+              int OrderID = OrderService.GetAllOrders().Where(p => p.CustomerID == CustomerID.ToString()).Select(p=>p.OrderID).FirstOrDefault();
+
+            var OrderList = CartList.GroupBy(p => p.ProductID); 
+
+            foreach (var order in OrderList)
+            {
+                string o = order.Select(p => p.Name).FirstOrDefault();
+                int productID = productservice.GetAllProducts().Where(p=>p.Name == o).Select(p=>p.ProductID).FirstOrDefault();
+                CreateOrderDetailsDTO DtoDetailes = new CreateOrderDetailsDTO()
+                {
+                    OrderStatus = OrderStatus.Processing,
+                    ProductID = productID,
+                    Discount = 0,
+                    Quantity = 1,
+                    OrderID = OrderID,
+                };
+
+                OrderDetsService.AddOrderDetails(DtoDetailes);
+            }
+               
+            
+       }
+            private void BillBtn_Click(object sender, EventArgs e)
+            {
+                decimal? price = 0;
+                foreach (var item in CartList)
+                {
+                    if (price != null)
+                        price += item.UnitPrice;
+                }
+                DialogResult massege = MessageBox.Show($"Your Bill = {price}$ ");
+
+                if (massege == DialogResult.OK)
+                {
+                    CreateOrderDTO dto = new() { CustomerID = CustomerID.ToString(), OrderDate = DateTime.Now };
+                    OrderService.AddOrder(dto);
+                }
+            }
 
         }
-    }
-}
+    } 
