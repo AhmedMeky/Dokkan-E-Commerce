@@ -3,37 +3,8 @@
   "WorkspaceRootPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\eldokkan.pl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\eldokkan.pl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB081F7C-2165-47DE-AA27-7B976BF47209}|Models\\Models.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB081F7C-2165-47DE-AA27-7B976BF47209}|Models\\Models.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\context\\entityconfiguration\\productentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\entityconfiguration\\productentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\migrations\\20240831212328_create database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\migrations\\20240831212328_create database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\iti\\advance c#\\project\\context\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
+      "AbsoluteMoniker": "D:0:0:{C7A4F25E-A718-40BF-9A15-D7908885DE1C}|Repositories\\Repositories.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C7A4F25E-A718-40BF-9A15-D7908885DE1C}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,113 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240831212328_create database.cs",
-              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\Migrations\\20240831212328_create database.cs",
-              "RelativeDocumentMoniker": "Context\\Migrations\\20240831212328_create database.cs",
-              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\Migrations\\20240831212328_create database.cs",
-              "RelativeToolTip": "Context\\Migrations\\20240831212328_create database.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T21:23:28.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GlobalUsing.cs",
-              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\GlobalUsing.cs",
-              "RelativeDocumentMoniker": "Context\\GlobalUsing.cs",
-              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\GlobalUsing.cs",
-              "RelativeToolTip": "Context\\GlobalUsing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T19:58:56.779Z"
->>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "Eldokkan.pl",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Eldokkan.pl.csproj",
-              "RelativeDocumentMoniker": "PL\\Eldokkan.pl.csproj",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Eldokkan.pl.csproj",
-              "RelativeToolTip": "PL\\Eldokkan.pl.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAKAAAA",
+              "Title": "Repositories",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Repositories\\Repositories.csproj",
+              "RelativeDocumentMoniker": "Repositories\\Repositories.csproj",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Repositories\\Repositories.csproj",
+              "RelativeToolTip": "Repositories\\Repositories.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-01T08:45:19.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrontEnd.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
-              "RelativeDocumentMoniker": "PL\\FrontEnd.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
-              "RelativeToolTip": "PL\\FrontEnd.cs",
-              "ViewState": "AQIAALoAAAAAAAAAAAAkwI4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T08:31:03.828Z",
+              "WhenOpened": "2024-09-01T10:13:29.696Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "Context\\AppDbContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAmwBQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T21:48:59.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductEntityTypeConfiguration.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\EntityConfiguration\\ProductEntityTypeConfiguration.cs",
-              "RelativeDocumentMoniker": "Context\\EntityConfiguration\\ProductEntityTypeConfiguration.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Context\\EntityConfiguration\\ProductEntityTypeConfiguration.cs",
-              "RelativeToolTip": "Context\\EntityConfiguration\\ProductEntityTypeConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T21:38:59.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T21:38:33.41Z"
-=======
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
-              "ToolTip": "D:\\ITI\\Advance C#\\Project\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T19:28:40.616Z",
-              "EditorCaption": ""
->>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
             }
           ]
         }
