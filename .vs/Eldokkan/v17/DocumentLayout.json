@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\context\\migrations\\20240831220355_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\context\\migrations\\20240831220355_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{832DD0EF-1E68-40CB-8FC9-2A3B6416E61D}|Context\\Context.csproj|solutionrelative:context\\migrations\\20240831220355_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Context\\Migrations\\20240831220355_initialCreate.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T22:03:55.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T22:03:55.507Z"
             },
             {
               "$type": "Document",
