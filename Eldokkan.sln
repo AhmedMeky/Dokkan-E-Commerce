@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Context", "Context\Context.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{AB081F7C-2165-47DE-AA27-7B976BF47209}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eldokkan.pl", "PL\Eldokkan.pl.csproj", "{C2BEB36A-5F1D-4223-9411-74F00979AD66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PL", "PL\PL.csproj", "{C2BEB36A-5F1D-4223-9411-74F00979AD66}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{D0317B7C-BC4F-410E-8A6F-60F608494EB3}"
 EndProject

@@ -4872,9 +4872,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Eldokkan.pl.csproj",
-      "projectName": "Eldokkan.pl",
-      "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Eldokkan.pl.csproj",
+      "projectUniqueName": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\PL.csproj",
+      "projectName": "PL",
+      "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\PL.csproj",
       "packagesPath": "C:\\Users\\CS\\.nuget\\packages\\",
       "outputPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\obj\\",
       "projectStyle": "PackageReference",

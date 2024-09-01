@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y6AOHQifqW5IPCkzvEcvcICXkf/NSoF1VVaggMu4CoJe33UO/Fx6tRC7P682hcAeK1+c3q2JIg2FayenFt+HAg==",
+  "dgSpecHash": "98ezamxfIXPUiIGPiOvvr9iMgS6TIes0bdYaK4Z28cc8HB+mNHMfvoEmRnvm3NWWGER/nz2EA5mgCHUxHpqTgw==",
   "success": true,
-  "projectFilePath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Eldokkan.pl.csproj",
+  "projectFilePath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\PL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CS\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\CS\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
