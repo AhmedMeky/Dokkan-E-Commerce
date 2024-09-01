@@ -86,16 +86,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Eldokkan.Dto/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Eldokkan.Dto.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Eldokkan.Dto.dll": {}
-        }
-      },
       "Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -220,11 +210,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Eldokkan.Dto/1.0.0": {
-      "type": "project",
-      "path": "../Eldokkan.Dto/Eldokkan.Dto.csproj",
-      "msbuildProject": "../Eldokkan.Dto/Eldokkan.Dto.csproj"
-    },
     "Models/1.0.0": {
       "type": "project",
       "path": "../Models/Models.csproj",
@@ -234,7 +219,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
-      "Eldokkan.Dto >= 1.0.0",
       "Models >= 1.0.0"
     ]
   },
@@ -265,9 +249,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Dto\\Eldokkan.Dto.csproj": {
-              "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Eldokkan.Dto\\Eldokkan.Dto.csproj"
-            },
             "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj": {
               "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\Models.csproj"
             }

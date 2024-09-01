@@ -645,10 +645,7 @@
           "Models": "1.0.0"
         },
         "runtime": {
-          "Context.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Context.dll": {}
         }
       },
       "IRepositories/1.0.0": {
@@ -656,18 +653,12 @@
           "Models": "1.0.0"
         },
         "runtime": {
-          "IRepositories.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "IRepositories.dll": {}
         }
       },
       "Models/1.0.0": {
         "runtime": {
-          "Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Models.dll": {}
         }
       }
     }

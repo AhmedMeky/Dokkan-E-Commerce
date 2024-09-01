@@ -13,7 +13,6 @@ namespace Eldokkan.Application.Service
     {
         public CreateProductDtos ADDProduct(CreateProductDtos product);
         public List<GetAllProductDtos> GetPagination(int count , int PageNumber);
-        public int All_product_sum();
 
         public GetAllProductDtos Search(string name);
 

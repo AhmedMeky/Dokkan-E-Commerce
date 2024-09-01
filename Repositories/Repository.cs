@@ -14,11 +14,15 @@ where TEntity : class
     public TEntity GetById(int id)
     {
         return _dbSet.Find(id);
+        // return _dbSet
+        //     .Include(o => o.OrderDetails)
+        //     .ThenInclude(od => od.Product)
+        //     .FirstOrDefaultAsync(o => o.OrderId == id);
     }
 
     public IEnumerable<TEntity> GetAll()
     {
-        return _dbSet.ToList();
+        return  _dbSet.ToList();
     }
 
     public TEntity Add(TEntity entity)

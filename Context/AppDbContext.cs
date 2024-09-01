@@ -2,23 +2,23 @@
 namespace ELDOKKAN.Context;
 public class AppDbContext : DbContext
 {
-    // public AppContext(DbContextOptions<AppContext> options)
+    // public AppDbContext(DbContextOptions<AppDbContext> options)
     //     : base(options)
     // {
     // }
 
-    public DbSet<Admin> Admins { get; set; }
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Order> Orders { get; set; }
-    public DbSet<OrderDetails> OrderDetails { get; set; }
-    public DbSet<Product> Products { get; set; }
-    public DbSet<Category> Categories { get; set; }
+    public DbSet<Admin> Admins { get; set; } = null!;
+    public DbSet<Customer> Customers { get; set; } = null!;
+    public DbSet<Order> Orders { get; set; } = null!;
+    public DbSet<OrderDetails> OrderDetails { get; set; } = null!;
+    public DbSet<Product> Products { get; set; } = null!;
+    public DbSet<Category> Categories { get; set; } = null!;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         var configuration = new ConfigurationBuilder()
                 .SetBasePath(AppContext.BaseDirectory)
-                .AddJsonFile("./AppSettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile("AppSettings.json", optional: false, reloadOnChange: true)
                 .Build();
 
         string connectionString = configuration.GetConnectionString("DefaultConnection")!;

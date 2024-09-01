@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Eldokkan.Application.Service;
-using Eldokkan.Dto.Product;
 using Eldokkan.pl;
+using ELDOKKAN.Application.DTOs.Customer;
+using ELDOKKAN.Application.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,21 +21,21 @@ namespace PL
     public partial class FrontEnd : Form
     {
         IContainer Container = AutoFac.Inject();
-        IProductServices productservice;
+        IProductService productservice;
         private int currentPage;
         int size;
 
 
 
-        List<GetAllProductDtos> CartList;
+        List<GetAllProductDTO> CartList;
         BindingNavigator bindingNavigator;
         BindingSource PrdBindingSource;
         public FrontEnd()
         {
             InitializeComponent();
-            CartList = new List<GetAllProductDtos>();
-            productservice = Container.Resolve<IProductServices>();
-            size = (productservice.All_product_sum() / 9) + 1;
+            CartList = new List<GetAllProductDTO>();
+            productservice = Container.Resolve<IProductService>();
+            size = (productservice.GetAllProducts().Count() / 9) + 1;
             currentPage = 1;
 
         }
@@ -43,7 +43,7 @@ namespace PL
         {
             if (sender is Button button)
             {
-                if (button.Tag is GetAllProductDtos item)
+                if (button.Tag is GetAllProductDTO item)
                 {
                     CartList.Add(item);
 
@@ -96,7 +96,7 @@ namespace PL
 
         private void LoadOneElement(string nama)
         {
-            var item = productservice.Search(nama);
+            var item = productservice.GetProductByName(nama).FirstOrDefault();
 
             if (item != null)
             {
@@ -221,7 +221,7 @@ namespace PL
 
         private void DeleteCart_Click(object sender, EventArgs e)
         {
-            string name = this.ProUpdate.SelectedValue.ToString();
+            string name = this.LabelName.Text;
             var p = CartList.FirstOrDefault(x => x.Name == name);
             if (p != null)
             {
@@ -251,11 +251,11 @@ namespace PL
             {
                 PrdBindingSource = new BindingSource(CartList, "");
 
-                ProUpdate.DataSource = productservice.Get_All();
+                ProUpdate.DataSource = productservice.GetAllProducts();
                 ProUpdate.DisplayMember = "Name";
                 ProUpdate.ValueMember = "Name";
+               // ProUpdate.DataBindings.Add("SelectedValue", PrdBindingSource, "Name");
 
-                ProUpdate.DataBindings.Add("SelectedValue", PrdBindingSource, "Name");
                 LabelName.DataBindings.Add("Text", PrdBindingSource, "Name");
                 ProPrice.DataBindings.Add("Text", PrdBindingSource, "UnitPrice");
 
@@ -273,7 +273,7 @@ namespace PL
 
             var NewProductName = ProUpdate.SelectedValue.ToString();
 
-            var newProduct = CartList.Where(p => p.Name == NewProductName).FirstOrDefault();
+            var newProduct = productservice.GetAllProducts().Where(p => p.Name == NewProductName).FirstOrDefault();
            
             ProPrice.Text = newProduct.UnitPrice.ToString();
 

@@ -1,8 +1,8 @@
 namespace ELDOKKAN.Models;
-
+#nullable disable
 public class Customer
 {
-    public string CustomerID { get; set; }
+    public int CustomerID { get; set; }
     public string Name { get; set; }
     public string Address { get; set; }
     public string PostalCode { get; set; }

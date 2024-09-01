@@ -57,8 +57,8 @@ namespace Eldokkan.Application.Service
 
         public int  All_product_sum()
         {
-          return iproductRepository.GetAll().ToList().Count();
 
+            return 1;  // iproductRepository.GetAll().ToList().Count();
         }
 
 
