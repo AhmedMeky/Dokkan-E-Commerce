@@ -189,28 +189,28 @@ namespace PL
         {
            
             ICategoryService ICatService = cat.Resolve<ICategoryService>();
-            categBox.DataSource = ICatService.GetAllCategories().ToList();
-            categBox.DisplayMember = "CategoryName";
-            categBox.ValueMember = "CategoryID";
+            BahgatcategBox.DataSource = ICatService.GetAllCategories().ToList();
+            BahgatcategBox.DisplayMember = "CategoryName";
+            BahgatcategBox.ValueMember = "CategoryID";
 
             ProductList = IProService.GetAllProducts().ToList();
-            ProductGridView.DataSource = ProductList;
-            ProductGridView.ReadOnly = true;
+            ProductBahgatGridView.DataSource = ProductList;
+            ProductBahgatGridView.ReadOnly = true;
 
-            ProductBindSource.DataSource = ProductGridView.DataSource;
+            ProductBindSource.DataSource = ProductBahgatGridView.DataSource;
 
-            ProText.DataBindings.Clear();
-            UnitsText.DataBindings.Clear();
-            categBox.DataBindings.Clear();
-            IDLabel.DataBindings.Clear();
-            PriceText.DataBindings.Clear();
+            BahgatProText.DataBindings.Clear();
+            BahgatUnitsText.DataBindings.Clear();
+            BahgatcategBox.DataBindings.Clear();
+            BahgatIDLabel.DataBindings.Clear();
+            BahgatPriceText.DataBindings.Clear();
 
-            ProText.DataBindings.Add("Text", ProductBindSource, "Name");
-            UnitsText.DataBindings.Add("Text", ProductBindSource, "UnitsInStock");
-            IDLabel.DataBindings.Add("Text", ProductBindSource, "ProductID");
-            PriceText.DataBindings.Add("Text", ProductBindSource, "UnitPrice");
+            BahgatProText.DataBindings.Add("Text", ProductBindSource, "Name");
+            BahgatUnitsText.DataBindings.Add("Text", ProductBindSource, "UnitsInStock");
+            BahgatIDLabel.DataBindings.Add("Text", ProductBindSource, "ProductID");
+            BahgatPriceText.DataBindings.Add("Text", ProductBindSource, "UnitPrice");
 
-            categBox.DataBindings.Add("SelectedValue", ProductBindSource, "CategoryID");
+            BahgatcategBox.DataBindings.Add("SelectedValue", ProductBindSource, "CategoryID");
         }
 
         private void moveNext_Click(object sender, EventArgs e)
@@ -225,7 +225,7 @@ namespace PL
 
         private void DelBtn_Click(object sender, EventArgs e)
         {
-            bool parsing = int.TryParse(IDLabel.Text.ToString(), out int proID);
+            bool parsing = int.TryParse(BahgatIDLabel.Text.ToString(), out int proID);
 
             if (parsing == true)
             {
@@ -238,18 +238,18 @@ namespace PL
         private void addbtn_Click(object sender, EventArgs e)
         {
             CreateProductDTO dto = new CreateProductDTO();
-            dto.UnitPrice = decimal.Parse(UnitsText.Text);
-            dto.Name = ProText.Text;
-            dto.UnitsInStock = int.Parse(UnitsText.Text);
-            dto.CategoryID = int.Parse(categBox.SelectedValue.ToString());
-            this.Text = categBox.SelectedValue.ToString();
+            dto.UnitPrice = decimal.Parse(BahgatUnitsText.Text);
+            dto.Name = BahgatProText.Text;
+            dto.UnitsInStock = int.Parse(BahgatUnitsText.Text);
+            dto.CategoryID = int.Parse(BahgatcategBox.SelectedValue.ToString());
+            this.Text = BahgatcategBox.SelectedValue.ToString();
 
             IProService.AddProduct(dto);
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            bool parsing = int.TryParse(IDLabel.Text.ToString(), out int proID);
+            bool parsing = int.TryParse(BahgatIDLabel.Text.ToString(), out int proID);
 
             if (parsing == true)
             {
@@ -260,18 +260,18 @@ namespace PL
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            ProText.Clear();
-            UnitsText.Clear();
-            IDLabel.Text = " ";
-            PriceText.Clear();
-            addbtn.Visible = true;
+            BahgatProText.Clear();
+            BahgatUnitsText.Clear();
+            BahgatIDLabel.Text = " ";
+            BahgatPriceText.Clear();
+            Bahgataddbtn.Visible = true;
 
 
-            ProText.DataBindings.Clear();
-            UnitsText.DataBindings.Clear();
-            categBox.DataBindings.Clear();
-            IDLabel.DataBindings.Clear();
-            PriceText.DataBindings.Clear();
+            BahgatProText.DataBindings.Clear();
+            BahgatUnitsText.DataBindings.Clear();
+            BahgatcategBox.DataBindings.Clear();
+            BahgatIDLabel.DataBindings.Clear();
+            BahgatPriceText.DataBindings.Clear();
 
         }
 

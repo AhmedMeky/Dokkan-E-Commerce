@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\frontend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\frontend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB081F7C-2165-47DE-AA27-7B976BF47209}|Models\\Models.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB081F7C-2165-47DE-AA27-7B976BF47209}|Models\\Models.csproj|solutionrelative:models\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0317B7C-BC4F-410E-8A6F-60F608494EB3}|Application\\Application.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\application\\dtos\\orderdetails\\createorderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0317B7C-BC4F-410E-8A6F-60F608494EB3}|Application\\Application.csproj|solutionrelative:application\\dtos\\orderdetails\\createorderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|D:\\full-stack net Core\\VS_C#\\ElDokkan\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\full-stack net core\\vs_c#\\eldokkan\\pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,79 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderDetails.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\OrderDetails.cs",
-              "RelativeDocumentMoniker": "Models\\OrderDetails.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Models\\OrderDetails.cs",
-              "RelativeToolTip": "Models\\OrderDetails.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "DocumentIndex": 0,
+              "Title": "Dashborad.cs",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Dashborad.cs",
+              "RelativeDocumentMoniker": "PL\\Dashborad.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Dashborad.cs",
+              "RelativeToolTip": "PL\\Dashborad.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAuwBgBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T21:32:02.038Z",
+              "WhenOpened": "2024-09-01T23:43:31.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrontEnd.cs [Design]",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
-              "RelativeDocumentMoniker": "PL\\FrontEnd.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs [Design]",
-              "RelativeToolTip": "PL\\FrontEnd.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Dashborad.cs [Design]",
+              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Dashborad.cs",
+              "RelativeDocumentMoniker": "PL\\Dashborad.cs",
+              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Dashborad.cs [Design]",
+              "RelativeToolTip": "PL\\Dashborad.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T21:12:06.748Z",
+              "WhenOpened": "2024-09-01T23:38:30.145Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrontEnd.Designer.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.Designer.cs",
-              "RelativeDocumentMoniker": "PL\\FrontEnd.Designer.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.Designer.cs",
-              "RelativeToolTip": "PL\\FrontEnd.Designer.cs",
-              "ViewState": "AQIAAO8AAAAAAAAAAAAAAPcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T21:02:54.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Program.cs",
               "RelativeDocumentMoniker": "PL\\Program.cs",
               "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\Program.cs",
               "RelativeToolTip": "PL\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwA0AAAAoAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T20:53:01.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrontEnd.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
-              "RelativeDocumentMoniker": "PL\\FrontEnd.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\PL\\FrontEnd.cs",
-              "RelativeToolTip": "PL\\FrontEnd.cs",
-              "ViewState": "AQIAACgBAAAAAAAAAAAuwDEBAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T20:52:54.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateOrderDetailsDTO.cs",
-              "DocumentMoniker": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Application\\DTOs\\OrderDetails\\CreateOrderDetailsDTO.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\OrderDetails\\CreateOrderDetailsDTO.cs",
-              "ToolTip": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Application\\DTOs\\OrderDetails\\CreateOrderDetailsDTO.cs",
-              "RelativeToolTip": "Application\\DTOs\\OrderDetails\\CreateOrderDetailsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T21:32:42.688Z",
               "EditorCaption": ""
             }
           ]
