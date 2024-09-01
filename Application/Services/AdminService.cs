@@ -32,9 +32,9 @@ public class AdminService : IAdminService
         return getAllAdminDTO;
     }
 
-    public IEnumerable<GetAllAdminDTO> GetAllAdmins()
+    public List<GetAllAdminDTO> GetAllAdmins()
     {
-        return repository.GetAll().Select(ad => mapper.Map<GetAllAdminDTO>(ad));
+        return repository.GetAll().Select(ad => mapper.Map<GetAllAdminDTO>(ad)).ToList();
     }
     public bool UpdateAdmin(int adminId, UpdateAdminDTO updateAdminDTO)
     {
@@ -43,6 +43,6 @@ public class AdminService : IAdminService
             return false;
         admin.Name = updateAdminDTO.Name;
         admin.Password = updateAdminDTO.Password;
-        return repository.SaveChanges() == 1;
+         return repository.SaveChanges() == 1;
     }
 }

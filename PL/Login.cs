@@ -1,4 +1,6 @@
+using Autofac;
 using Eldokkan.pl;
+using ELDOKKAN.Application.Services;
 
 namespace PL
 {
@@ -38,8 +40,42 @@ namespace PL
 
         private void btnSign_Click_1(object sender, EventArgs e)
         {
-            var user = tb_username.Text;
-            var pass = tb_password.Text;
+            var user = tb_username.Text; string pass = tb_password.Text;
+            if (string.IsNullOrEmpty(user))
+                guna2MessageDialog1.Show("Please Enter user name");
+            if (string.IsNullOrEmpty(pass))
+                guna2MessageDialog1.Show("Please Enter user password");
+
+            if (tb_password.Text != string.Empty)
+                pass = PasswordHasher.HashPassword(pass);
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            IAdminService admin = autoFac.Resolve<IAdminService>();
+
+            var verfiyadmin = admin.GetAllAdmins().Where(p => p.Name == user ).ToList();
+           // verfiyadmin = verfiyadmin.Where(p=> p.Password==PasswordHasher.HashPassword( user)).ToList();
+            var verfycustomer = customer.GetAllCustomers().Where(p => p.Name == user && PasswordHasher.VerifyPassword(p.Password, user)).ToList();
+
+            if (verfiyadmin.Count>0)
+            {
+                this.Hide();
+
+                Dashborad dashborad = new Dashborad();
+                dashborad.ShowDialog();
+            }
+            else if (verfycustomer.Count> 0)
+            {
+                //
+                FrontEnd front = new FrontEnd();
+                front.ShowDialog();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("invalid username or password");
+            }
+
+
         }
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,9 +87,10 @@ namespace PL
         {
             using (SignUp sign = new SignUp())
             {
+                this.Hide();
+
                 sign.ShowDialog();
 
-                this.Hide();
             }
         }
     }
