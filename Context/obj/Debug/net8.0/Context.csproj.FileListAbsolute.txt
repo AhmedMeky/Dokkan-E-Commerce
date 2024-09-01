@@ -16,6 +16,7 @@ D:\ITI\Advance C#\Project\Context\bin\Debug\net8.0\Models.pdb
 D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.csproj.Up2Date
 D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\Context.genruntimeconfig.cache
 D:\ITI\Advance C#\Project\Context\obj\Debug\net8.0\ref\Context.dll
+<<<<<<< HEAD
 D:\full-stack net Core\VS_C#\ElDokkan\Context\bin\Debug\net8.0\Context.deps.json
 D:\full-stack net Core\VS_C#\ElDokkan\Context\bin\Debug\net8.0\Context.runtimeconfig.json
 D:\full-stack net Core\VS_C#\ElDokkan\Context\bin\Debug\net8.0\Context.dll
@@ -34,3 +35,6 @@ D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\refint\Context.dl
 D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\Context.pdb
 D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\Context.genruntimeconfig.cache
 D:\full-stack net Core\VS_C#\ElDokkan\Context\obj\Debug\net8.0\ref\Context.dll
+=======
+D:\ITI\Advance C#\Project\Context\bin\Debug\net8.0\Context.dll.config
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1

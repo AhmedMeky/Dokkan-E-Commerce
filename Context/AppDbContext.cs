@@ -14,20 +14,30 @@ public class AppDbContext : DbContext
     public DbSet<Product> Products { get; set; } = null!;
     public DbSet<Category> Categories { get; set; } = null!;
 
+
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //{
+    //    optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["World"].ConnectionString);
+    //}
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         var configuration = new ConfigurationBuilder()
                 .SetBasePath(AppContext.BaseDirectory)
+<<<<<<< HEAD
                 .AddJsonFile("AppSettings.json", optional: false, reloadOnChange: true)
+=======
+                .AddJsonFile(@"D:\ITI\Advance C#\Project\Context\AppSettings.json", optional: false, reloadOnChange: true)
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
                 .Build();
 
-        string connectionString = configuration.GetConnectionString("DefaultConnection")!;
+
         base.OnConfiguring(optionsBuilder);
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection")!);
         }
-    }    
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

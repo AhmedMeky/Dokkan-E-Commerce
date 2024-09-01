@@ -9,7 +9,10 @@
       "Eldokkan.pl/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+<<<<<<< HEAD
           "AutoMapper": "13.0.1",
+=======
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
           "Autofac": "8.0.0",
           "Context": "1.0.0",
           "Guna.Charts.WinForms": "1.0.9",
@@ -1054,7 +1057,14 @@
           "Repositories": "1.0.0"
         },
         "runtime": {
+<<<<<<< HEAD
           "Application.dll": {}
+=======
+          "Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
         }
       },
       "Context/1.0.0": {
@@ -1075,7 +1085,14 @@
           "Models": "1.0.0"
         },
         "runtime": {
+<<<<<<< HEAD
           "IRepositories.dll": {}
+=======
+          "IRepositories.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
         }
       },
       "Models/1.0.0": {
@@ -1091,6 +1108,19 @@
         },
         "runtime": {
           "Repositories.dll": {}
+        }
+      },
+      "Repositories/1.0.0": {
+        "dependencies": {
+          "Context": "1.0.0",
+          "IRepositories": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "Repositories.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

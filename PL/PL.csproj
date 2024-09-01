@@ -27,7 +27,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Context\Context.csproj" />
+<<<<<<< HEAD:PL/PL.csproj
     <ProjectReference Include="..\IRepositories\IRepositories.csproj" />
+=======
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1:PL/Eldokkan.pl.csproj
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Repositories\Repositories.csproj" />
   </ItemGroup>

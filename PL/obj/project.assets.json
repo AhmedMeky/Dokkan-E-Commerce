@@ -4853,7 +4853,10 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Application >= 1.0.0",
+<<<<<<< HEAD
       "AutoMapper >= 13.0.1",
+=======
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
       "Autofac >= 8.0.0",
       "Context >= 1.0.0",
       "Guna.Charts.WinForms >= 1.0.9",
@@ -4893,6 +4896,7 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Application\\Application.csproj": {
               "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Application\\Application.csproj"
             },
@@ -4907,6 +4911,16 @@
             },
             "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Repositories\\Repositories.csproj": {
               "projectPath": "D:\\full-stack net Core\\VS_C#\\ElDokkan\\Repositories\\Repositories.csproj"
+=======
+            "D:\\ITI\\Advance C#\\Project\\Application\\Application.csproj": {
+              "projectPath": "D:\\ITI\\Advance C#\\Project\\Application\\Application.csproj"
+            },
+            "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj": {
+              "projectPath": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj"
+            },
+            "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
+              "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj"
+>>>>>>> 989473fcd69059107df8ab80ef97ca6f8c55a7b1
             }
           }
         }
