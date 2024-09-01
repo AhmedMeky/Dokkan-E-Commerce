@@ -108,7 +108,6 @@
             tb_dashborad = new Guna.UI2.WinForms.Guna2TabControl();
             tabPage5 = new TabPage();
             tabControl1 = new TabControl();
-            tabPage4 = new TabPage();
             tabPage3 = new TabPage();
             tb_orderID = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -247,24 +246,12 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(714, 591);
             tabControl1.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            tabPage4.Location = new Point(4, 29);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(706, 558);
-            tabPage4.TabIndex = 1;
-            tabPage4.Text = "Order Report";
-            tabPage4.UseVisualStyleBackColor = true;
-            tabPage4.Click += tabPage4_Click;
             // 
             // tabPage3
             // 
@@ -1512,7 +1499,6 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabControl tabControl1;
-        private TabPage tabPage4;
         private MenuStrip menuStrip2;
         private ToolStripMenuItem saveToolStripMenuItem1;
         private TabControl tabControl2;
