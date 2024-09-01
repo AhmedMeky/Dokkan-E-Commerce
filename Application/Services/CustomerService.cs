@@ -36,7 +36,7 @@ public class CustomerService : ICustomerService
     {
         return repository.GetAll().Select(ad => mapper.Map<GetAllCustomerDTO>(ad));
     }
-    public bool UpdateCustomer(int CustomerId, UpdateCustomerDTO updateCustomerDTO)
+    public bool UpdateCustomer(int CustomerId, GetAllCustomerDTO updateCustomerDTO)
     {
         Customer customer = repository.GetById(CustomerId);
         if(customer == null)

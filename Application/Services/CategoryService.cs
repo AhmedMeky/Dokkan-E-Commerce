@@ -36,7 +36,7 @@ public class CategoryService : ICategoryService
     {
         return repository.GetAll().Select(ad => mapper.Map<GetAllCategoryDTO>(ad));
     }
-    public bool UpdateCategory(int categoryId, UpdateCategoryDTO updateCategoryDTO)
+    public bool UpdateCategory(int categoryId, GetAllCategoryDTO updateCategoryDTO)
     {
         Category category = repository.GetById(categoryId);
         if(category == null)

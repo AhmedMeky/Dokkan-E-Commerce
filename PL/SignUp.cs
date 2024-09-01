@@ -1,4 +1,6 @@
-﻿using PL;
+﻿using Autofac;
+using ELDOKKAN.Application.Services;
+using PL;
 using System.Text.RegularExpressions;
 
 
@@ -77,10 +79,10 @@ namespace Eldokkan.pl
             {
                 lb_name.Text = "Full Name";
                 lb_name.ForeColor = Color.Black;
-             }
+            }
             else
             {
-                tb_name.BackColor = Color.LightCoral; 
+                tb_name.BackColor = Color.LightCoral;
                 lb_name.Text = "Enter Vaild Name";
                 lb_name.ForeColor = Color.Red;
                 tb_name.Focus();
@@ -100,7 +102,8 @@ namespace Eldokkan.pl
                 lb_address.Text = "Please Enter Address";
                 lb_address.ForeColor = Color.Red;
             }
-            else {
+            else
+            {
                 lb_address.Text = "Address";
                 lb_address.ForeColor = Color.Black;
             }
@@ -135,7 +138,7 @@ namespace Eldokkan.pl
         }
         private bool IsValidPhoneNumber(string phoneNumber)
         {
-             var phonePattern = @"^(01[0125]\d{8}|02\d{8})$";
+            var phonePattern = @"^(01[0125]\d{8}|02\d{8})$";
             var regex = new Regex(phonePattern);
             return regex.IsMatch(phoneNumber);
         }
@@ -153,7 +156,7 @@ namespace Eldokkan.pl
                 // MessageBox.Show("Please enter a valid Egyptian phone number.");
                 lb_phone.Text = "Please enter a valid Egyptian phone number.";
                 lb_phone.ForeColor = Color.Red;
-                tb_phone.Focus();  
+                tb_phone.Focus();
             }
             else
             {
@@ -178,28 +181,43 @@ namespace Eldokkan.pl
             else
             {
                 lb_postal.Text = "Postal Code";
-                lb_postal.ForeColor= Color.Black;
+                lb_postal.ForeColor = Color.Black;
             }
-            
+
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            customer.AddCustomer(new CreateCustomerDTO()
+            {
+                Name = tb_name.Text,
+                Email = tb_email.Text,
+                Password = tb_password.Text,
+                Address = tb_address.Text,
+                Phone = tb_phone.Text,
+                PostalCode = tb_PostalCode.Text,
+            });
+            MessageBox.Show("Created Succefuly!");
         }
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.ShowDialog();
+            using (Login login = new Login())
+            {
+                login.ShowDialog();
+                this.Hide();
+            }
+
         }
         private bool ValidateName(string name)
         {
-             string NamePattern = @"^[A-Za-z\s]{3,50}$";
+            string NamePattern = @"^[A-Za-z\s]{3,50}$";
 
             Regex regex = new Regex(NamePattern);
 
-             return regex.IsMatch(name);
+            return regex.IsMatch(name);
         }
         private void tb_name_TextChanged(object sender, EventArgs e)
         {
@@ -208,7 +226,7 @@ namespace Eldokkan.pl
 
         private void SignUp_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void SignUp_Load(object sender, EventArgs e)

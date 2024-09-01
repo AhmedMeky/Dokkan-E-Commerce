@@ -47,42 +47,48 @@ namespace PL
                 guna2MessageDialog1.Show("Please Enter user password");
 
             if (tb_password.Text != string.Empty)
-                pass = PasswordHasher.HashPassword(pass);
+                tb_password.Focus();
+            // pass = PasswordHasher.HashPassword(pass);
             var autoFac = AutoFac.Inject();
             ICustomerService customer = autoFac.Resolve<ICustomerService>();
             IAdminService admin = autoFac.Resolve<IAdminService>();
 
-            var verfiyadmin = admin.GetAllAdmins().Where(p => p.Name == user ).ToList();
-           // verfiyadmin = verfiyadmin.Where(p=> p.Password==PasswordHasher.HashPassword( user)).ToList();
-            var verfycustomer = customer.GetAllCustomers().Where(p => p.Name == user && PasswordHasher.VerifyPassword(p.Password, user)).ToList();
+            var verfiyadmin = admin.GetAllAdmins().Where(p => p.Name == user && p.Password == pass).FirstOrDefault();
+            // verfiyadmin = verfiyadmin.Where(p=> p.Password==PasswordHasher.HashPassword( user)).ToList();
+            // var verfycustomer = customer.GetAllCustomers().Where(p => p.Name == user && PasswordHasher.VerifyPassword(p.Password, user)).ToList();
+            var verfycustomer = customer.GetAllCustomers().Where(p => p.Name == user && p.Password == pass).FirstOrDefault();
 
-            if (verfiyadmin.Count>0)
+            if (verfiyadmin != null)
             {
-                this.Hide();
 
-                Dashborad dashborad = new Dashborad();
-                dashborad.ShowDialog();
+                using (Dashborad dashborad = new Dashborad())
+                {
+                    dashborad.ShowDialog();
+                    this.Hide();
+
+                }
             }
-            else if (verfycustomer.Count> 0)
+            else if (verfycustomer != null)
             {
                 //
-                FrontEnd front = new FrontEnd();
-                front.ShowDialog();
-                this.Hide();
+                using (FrontEnd front = new FrontEnd())
+                {
+                    front.CustomerID = verfycustomer.CustomerID;
+                    front.ShowDialog();
+                    this.Hide();
+                }
+
             }
             else
             {
                 MessageBox.Show("invalid username or password");
             }
-
-
         }
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
         private void btn_signup_Click(object sender, EventArgs e)
         {
             using (SignUp sign = new SignUp())

@@ -17,6 +17,7 @@ namespace PL
         Cart cart;
         About about;
         customerLogin log;
+        public int CustomerID {  get; set; }
         public FrontEnd()
         {
              products = new Products();

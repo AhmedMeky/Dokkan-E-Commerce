@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Eldokkan.pl;
 using ELDOKKAN.Application.Services;
+using ELDOKKAN.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,16 +22,21 @@ namespace PL
         {
             InitializeComponent();
             bindingSource = new BindingSource();
+            bindingadmin = new BindingSource();
+            bindingcategory = new BindingSource();
+            bindingCustomer = new BindingSource();
+
             Navigator = new BindingNavigator();
 
         }
+        BindingSource bindingadmin;
+        BindingSource bindingcategory;
+        BindingSource bindingCustomer;
         BindingSource bindingSource;
+
         BindingNavigator Navigator;
 
-        private void tabPage10_Click(object sender, EventArgs e)
-        {
 
-        }
         private bool IsValidPassword(string password)
         {
             // Adjust the regex pattern to match your password requirements
@@ -118,15 +124,23 @@ namespace PL
         {
             var autoFac = AutoFac.Inject();
             IAdminService admin = autoFac.Resolve<IAdminService>();
-            var re = admin.AddAdmin(new CreateAdminDTO()
-            {
-                Name = tb_username.Text,
-                Email = tb_email.Text,
-                Password = PasswordHasher.HashPassword(tb_password.Text),
-                //Password = EncryptionHelper.Encrypt(tb_password.Text),
-            });
-            MessageBox.Show("Record Inserted successfully.");
 
+            var result = admin.GetAllAdmins().Where(p => p.Name == tb_username.Text).ToList();
+            if (result.Count > 0)
+            {
+                MessageBox.Show("user name already exist try another one");
+            }
+            else
+            {
+                var re = admin.AddAdmin(new CreateAdminDTO()
+                {
+                    Name = tb_username.Text,
+                    Email = tb_email.Text,
+                    Password = PasswordHasher.HashPassword(tb_password.Text),
+                    //Password = EncryptionHelper.Encrypt(tb_password.Text),
+                });
+                MessageBox.Show("Record Inserted successfully.");
+            }
 
         }
 
@@ -137,20 +151,28 @@ namespace PL
         void BindControls()
         {
             // tb.DataBindings.Add("Text", bindingSource, "TitleId");
-            tb_useradminUP.DataBindings.Add("Text", bindingSource, "Name");
-            tb_passwordadmin.DataBindings.Add("Text", bindingSource, "Password");
+            if (tb_useradminUP.DataBindings.Count == 0)
+            {
+
+
+                tb_useradminUP.DataBindings.Add("Text", bindingadmin, "Name");
+                tb_passwordadmin.DataBindings.Add("Text", bindingadmin, "Password");
+
+            }
         }
         private void tabControl3_Click(object sender, EventArgs e)
         {
             var autoFac = AutoFac.Inject();
             IAdminService admin = autoFac.Resolve<IAdminService>();
-            bindingSource.DataSource = admin.GetAllAdmins().ToList();
-            Navigator = new BindingNavigator(bindingSource);
+            bindingadmin.DataSource = admin.GetAllAdmins().ToList();
+            Navigator = new BindingNavigator(bindingadmin);
 
             BindControls();
             Navigator.Dock = DockStyle.Right;
 
             this.Controls.Add(Navigator);
+            bindingadmin.DataSource = admin.GetAllAdmins();
+            bindingadmin.ResetBindings(false);
             //  dtgv_admin.Columns[]
         }
 
@@ -164,8 +186,266 @@ namespace PL
         {
             var autoFac = AutoFac.Inject();
             IAdminService admin = autoFac.Resolve<IAdminService>();
-            if (bindingSource.Current is UpdateAdminDTO dTO)
-                admin.UpdateAdmin(dTO.AdminID,dTO);
+            // UpdateAdminDTO update= new UpdateAdminDTO() { AdminID= bindingSource.Current };
+            if (bindingadmin.Current is GetAllAdminDTO dTO)
+            {
+                admin.UpdateAdmin(dTO.AdminID, dTO);
+
+                MessageBox.Show("Updeted Successfuly");
+
+            }
         }
+
+        private void btn_deleteadmin_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            IAdminService admin = autoFac.Resolve<IAdminService>();
+            if (bindingadmin.Current is GetAllAdminDTO dTO)
+            {
+                admin.DeleteAdmin(dTO.AdminID);
+                MessageBox.Show("Deleted Successfuly");
+            }
+
+        }
+
+        private void tabPage7_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICategoryService category = autoFac.Resolve<ICategoryService>();
+            bindingcategory.DataSource = category.GetAllCategories().ToList();
+            Navigator = new BindingNavigator(bindingcategory);
+            Navigator.Dock = DockStyle.Right;
+
+            this.Controls.Add(Navigator);
+            if (tb_category.DataBindings.Count == 0)
+            {
+                tb_category.DataBindings.Add("Text", bindingcategory, "CategoryName");
+                tb_description.DataBindings.Add("Text", bindingcategory, "Description");
+            }
+        }
+
+        private void btn_saveCategory_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICategoryService category = autoFac.Resolve<ICategoryService>();
+
+            category.AddCategory(new CreateCategoryDTO()
+            {
+                CategoryName = tb_category.Text,
+                Description = tb_category.Text,
+            });
+            MessageBox.Show("inserted Successfuly!");
+            bindingcategory.DataSource = category.GetAllCategories();
+            bindingcategory.ResetBindings(false);
+        }
+
+        private void btn_updatecategory_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICategoryService category = autoFac.Resolve<ICategoryService>();
+            if (bindingcategory.Current is GetAllCategoryDTO dTO)
+            {
+                category.UpdateCategory(dTO.CategoryID, dTO);
+                MessageBox.Show("Updated Successfuly!");
+                bindingcategory.DataSource = category.GetAllCategories();
+                bindingcategory.ResetBindings(false);
+
+            }
+        }
+
+        private void btn_deletecategory_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICategoryService category = autoFac.Resolve<ICategoryService>();
+            if (bindingcategory.Current is GetAllCategoryDTO dTO)
+            {
+                category.DeleteCategory(dTO.CategoryID);
+                MessageBox.Show("Delted Successfuly!");
+                bindingcategory.DataSource = category.GetAllCategories();
+
+                bindingcategory.ResetBindings(false);
+
+
+            }
+        }
+
+
+        private void btn_CategorySearch_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICategoryService category = autoFac.Resolve<ICategoryService>();
+            bindingcategory.DataSource = category.GetAllCategories()
+                                                    .Where(p => p.CategoryName.ToLower().Contains(tb_CategorySearch.Text.ToLower()) ||
+                                                    p.Description.ToLower().Contains(tb_CategorySearch.Text.ToLower())).ToList();
+            dtgv_categorySearch.DataSource = bindingcategory;
+
+        }
+
+        private void tabControl4_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICategoryService category = autoFac.Resolve<ICategoryService>();
+
+            bindingcategory.DataSource = category.GetAllCategories();
+            var data = category.GetAllCategories();
+            if (dtgv_categorySearch.DataSource == null)
+                dtgv_categorySearch.DataSource = bindingcategory;
+            // 011 58 99 19 67
+        }
+
+        private void tabPage10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            IOrderService order = autoFac.Resolve<IOrderService>();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            bindingSource.DataSource = order.GetAllOrders().ToList();
+            Navigator = new BindingNavigator(bindingSource);
+            Navigator.Dock = DockStyle.Right;
+
+            this.Controls.Add(Navigator);
+            if (tb_orderID.DataBindings.Count == 0)
+            {
+                guna2DateTimePicker2.DataBindings.Add("Text", bindingSource, "OrderDate");
+                tb_orderID.DataBindings.Add("Text", bindingSource, "OrderID");
+                cb_customer.DataSource = customer.GetAllCustomers().Select(p => new { Name = p.Name, CustomerID = p.CustomerID }).ToList();
+                cb_customer.DisplayMember = "Name";
+                cb_customer.ValueMember = "CustomerID";
+                cb_customer.DataBindings.Add("SelectedValue", bindingSource, "CustomerID");
+
+            }
+        }
+
+        private void btn_orderDelete_Click(object sender, EventArgs e)
+        {
+
+            var autoFac = AutoFac.Inject();
+            IOrderService order = autoFac.Resolve<IOrderService>();
+
+            IOrderDetailsService orderdetails = autoFac.Resolve<IOrderDetailsService>();
+            if (bindingSource.Current is GetAllOrderDTO dTO)
+            {
+                //var id = orderdetails.GetAllOrderDetails().Where(d => d.OrderID == dTO.OrderID).Select(d=>d.);
+                // orderdetails.DeleteOrderDetails();
+
+            }
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            IOrderService category = autoFac.Resolve<IOrderService>();
+            bindingSource.DataSource = category.GetAllOrders();
+            if (dtgv_categorySearch.DataSource == null)
+                dtgv_categorySearch.DataSource = bindingSource;
+        }
+
+        private void tabPage8_Click(object sender, EventArgs e)
+        {
+
+        }
+        //customer=====================================================
+        private void btn_saveCustomer_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            customer.AddCustomer(new CreateCustomerDTO()
+            {
+                Name = tb_name.Text,
+                Email = tb_email.Text,
+                Password = tb_password.Text,
+                Address = tb_address.Text,
+                Phone = tb_phone.Text,
+                PostalCode = tb_PostalCode.Text,
+            });
+            MessageBox.Show("Created Succefuly!");
+            bindingCustomer.DataSource = customer.GetAllCustomers();
+
+            bindingCustomer.ResetBindings(false);
+        }
+
+        private void btn_updateCustomer_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            if (bindingCustomer.Current is GetAllCustomerDTO dTO)
+            {
+                customer.UpdateCustomer(dTO.CustomerID, dTO);
+                MessageBox.Show("Updated Successfuly");
+                bindingCustomer.DataSource = customer.GetAllCustomers();
+
+                bindingCustomer.ResetBindings(false);
+            }
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            bindingCustomer.DataSource = customer.GetAllCustomers().ToList();
+            Navigator = new BindingNavigator(bindingCustomer);
+            Navigator.Dock = DockStyle.Right;
+
+            this.Controls.Add(Navigator);
+            if (tb_name.DataBindings.Count == 0)
+            {
+                tb_name.DataBindings.Add("Text", bindingCustomer, "Name");
+                guna2TextBox2.DataBindings.Add("Text", bindingCustomer, "Password");
+                tb_PostalCode.DataBindings.Add("Text", bindingCustomer, "PostalCode");
+                tb_phone.DataBindings.Add("Text", bindingCustomer, "Phone");
+                guna2TextBox3.DataBindings.Add("Text", bindingCustomer, "Email");
+                tb_address.DataBindings.Add("Text", bindingCustomer, "Address");
+            }
+        }
+
+        private void btn_deleteCustomer_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            if (bindingCustomer.Current is GetAllCustomerDTO dTO)
+            {
+                customer.DeleteCustomer(dTO.CustomerID);
+                MessageBox.Show("Deleted Successfuly!");
+                bindingCustomer.DataSource = customer.GetAllCustomers();
+
+                bindingCustomer.ResetBindings(false);
+            }
+        }
+
+        private void tabPage13_Click(object sender, EventArgs e)
+        {
+            // tb_customerSearch
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            bindingCustomer.DataSource = customer.GetAllCustomers();
+            guna2DataGridView2.DataSource = bindingCustomer;
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            var autoFac = AutoFac.Inject();
+            ICustomerService customer = autoFac.Resolve<ICustomerService>();
+            bindingCustomer.DataSource = customer.GetAllCustomers()
+                                                    .Where(p => p.Name.ToLower().Contains(tb_customerSearch.Text.ToLower()) ||
+                                                    p.Address.ToLower().Contains(tb_customerSearch.Text.ToLower())||
+                                                    p.Email.ToLower().Contains(tb_customerSearch.Text.ToLower())||
+                                                    p.Phone.ToLower().Contains(tb_customerSearch.Text.ToLower())||
+                                                    p.PostalCode.ToLower().Contains(tb_customerSearch.Text.ToLower())                                                    
+                                                    ).ToList();
+            guna2DataGridView2.DataSource = bindingCustomer;
+        }
+
+        //==============================================
+
+        //==============================================
     }
 }

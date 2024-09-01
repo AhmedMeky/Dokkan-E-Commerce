@@ -36,7 +36,7 @@ public class AdminService : IAdminService
     {
         return repository.GetAll().Select(ad => mapper.Map<GetAllAdminDTO>(ad)).ToList();
     }
-    public bool UpdateAdmin(int adminId, UpdateAdminDTO updateAdminDTO)
+    public bool UpdateAdmin(int adminId, GetAllAdminDTO updateAdminDTO)
     {
         Admin admin = repository.GetById(adminId);
         if(admin == null)
@@ -45,4 +45,6 @@ public class AdminService : IAdminService
         admin.Password = updateAdminDTO.Password;
          return repository.SaveChanges() == 1;
     }
+
+   
 }

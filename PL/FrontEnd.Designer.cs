@@ -48,8 +48,9 @@
             panel1.Controls.Add(ProductBtn);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(203, 541);
+            panel1.Size = new Size(232, 721);
             panel1.TabIndex = 0;
             // 
             // logBtn
@@ -57,9 +58,10 @@
             logBtn.FlatStyle = FlatStyle.Flat;
             logBtn.Font = new Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             logBtn.ForeColor = SystemColors.ButtonHighlight;
-            logBtn.Location = new Point(0, 230);
+            logBtn.Location = new Point(0, 307);
+            logBtn.Margin = new Padding(3, 4, 3, 4);
             logBtn.Name = "logBtn";
-            logBtn.Size = new Size(203, 39);
+            logBtn.Size = new Size(232, 52);
             logBtn.TabIndex = 5;
             logBtn.Text = "Log In ";
             logBtn.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@
             AboutBtn.FlatStyle = FlatStyle.Flat;
             AboutBtn.Font = new Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             AboutBtn.ForeColor = SystemColors.ButtonHighlight;
-            AboutBtn.Location = new Point(0, 185);
+            AboutBtn.Location = new Point(0, 247);
+            AboutBtn.Margin = new Padding(3, 4, 3, 4);
             AboutBtn.Name = "AboutBtn";
-            AboutBtn.Size = new Size(203, 39);
+            AboutBtn.Size = new Size(232, 52);
             AboutBtn.TabIndex = 4;
             AboutBtn.Text = "About";
             AboutBtn.UseVisualStyleBackColor = true;
@@ -83,9 +86,10 @@
             CartBtn.FlatStyle = FlatStyle.Flat;
             CartBtn.Font = new Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CartBtn.ForeColor = SystemColors.ButtonHighlight;
-            CartBtn.Location = new Point(0, 140);
+            CartBtn.Location = new Point(0, 187);
+            CartBtn.Margin = new Padding(3, 4, 3, 4);
             CartBtn.Name = "CartBtn";
-            CartBtn.Size = new Size(203, 39);
+            CartBtn.Size = new Size(232, 52);
             CartBtn.TabIndex = 3;
             CartBtn.Text = "Cart";
             CartBtn.UseVisualStyleBackColor = true;
@@ -96,9 +100,10 @@
             ProductBtn.FlatStyle = FlatStyle.Flat;
             ProductBtn.Font = new Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ProductBtn.ForeColor = SystemColors.ButtonHighlight;
-            ProductBtn.Location = new Point(0, 95);
+            ProductBtn.Location = new Point(0, 127);
+            ProductBtn.Margin = new Padding(3, 4, 3, 4);
             ProductBtn.Name = "ProductBtn";
-            ProductBtn.Size = new Size(203, 39);
+            ProductBtn.Size = new Size(232, 52);
             ProductBtn.TabIndex = 2;
             ProductBtn.Text = "Product";
             ProductBtn.UseVisualStyleBackColor = true;
@@ -108,26 +113,29 @@
             // 
             panel2.BackColor = Color.LightSeaGreen;
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(203, 0);
+            panel2.Location = new Point(232, 0);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(686, 10);
+            panel2.Size = new Size(784, 13);
             panel2.TabIndex = 1;
             // 
             // PanelMain
             // 
-            PanelMain.Location = new Point(203, 95);
+            PanelMain.Location = new Point(232, 127);
+            PanelMain.Margin = new Padding(3, 4, 3, 4);
             PanelMain.Name = "PanelMain";
-            PanelMain.Size = new Size(686, 446);
+            PanelMain.Size = new Size(784, 595);
             PanelMain.TabIndex = 0;
             // 
             // FrontEnd
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(889, 541);
+            ClientSize = new Size(1016, 721);
             Controls.Add(PanelMain);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrontEnd";
             Text = "FrontEnd";
             panel1.ResumeLayout(false);

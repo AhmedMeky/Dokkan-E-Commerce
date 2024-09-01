@@ -4,6 +4,6 @@ public interface ICustomerService
     GetAllCustomerDTO GetCustomerById(int customerId);
     IEnumerable<GetAllCustomerDTO> GetAllCustomers();
     GetAllCustomerDTO AddCustomer(CreateCustomerDTO createCustomerDto);
-    bool UpdateCustomer(int customerId, UpdateCustomerDTO updateCustomerDto);
+    bool UpdateCustomer(int customerId, GetAllCustomerDTO updateCustomerDto);
     bool DeleteCustomer(int customerId);
 } 
