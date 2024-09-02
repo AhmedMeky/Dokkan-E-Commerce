@@ -22,7 +22,7 @@ where TEntity : class
 
     public IEnumerable<TEntity> GetAll()
     {
-        return _dbSet.ToList();
+        return  _dbSet.ToList();
     }
 
     public TEntity Add(TEntity entity)

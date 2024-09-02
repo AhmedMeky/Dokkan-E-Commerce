@@ -4853,14 +4853,17 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Application >= 1.0.0",
+      "AutoMapper >= 13.0.1",
       "Autofac >= 8.0.0",
       "Context >= 1.0.0",
       "Guna.Charts.WinForms >= 1.0.9",
       "Guna.UI2.WinForms >= 2.0.4.6",
+      "IRepositories >= 1.0.0",
       "Microsoft.EntityFrameWorkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameWorkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameWorkCore.Tools >= 8.0.8",
-      "Models >= 1.0.0"
+      "Models >= 1.0.0",
+      "Repositories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4870,9 +4873,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\PL\\Eldokkan.pl.csproj",
-      "projectName": "Eldokkan.pl",
-      "projectPath": "D:\\ITI\\Advance C#\\Project\\PL\\Eldokkan.pl.csproj",
+      "projectUniqueName": "D:\\ITI\\Advance C#\\Project\\PL\\PL.csproj",
+      "projectName": "PL",
+      "projectPath": "D:\\ITI\\Advance C#\\Project\\PL\\PL.csproj",
       "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
       "outputPath": "D:\\ITI\\Advance C#\\Project\\PL\\obj\\",
       "projectStyle": "PackageReference",
@@ -4901,8 +4904,14 @@
             "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj": {
               "projectPath": "D:\\ITI\\Advance C#\\Project\\Context\\Context.csproj"
             },
+            "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj": {
+              "projectPath": "D:\\ITI\\Advance C#\\Project\\IRepositories\\IRepositories.csproj"
+            },
             "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj": {
               "projectPath": "D:\\ITI\\Advance C#\\Project\\Models\\Models.csproj"
+            },
+            "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\ITI\\Advance C#\\Project\\Repositories\\Repositories.csproj"
             }
           }
         }
@@ -4922,6 +4931,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Autofac": {
             "target": "Package",
             "version": "[8.0.0, )"

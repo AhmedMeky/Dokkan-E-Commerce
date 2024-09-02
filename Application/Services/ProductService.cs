@@ -1,3 +1,6 @@
+using ELDOKKAN.Application.DTOs.Customer;
+using ELDOKKAN.Repositories;
+
 namespace ELDOKKAN.Application.Services;
 public class ProductService : IProductService
 {
@@ -44,17 +47,26 @@ public class ProductService : IProductService
     {
         return repository.GetAll().Select(ad => mapper.Map<GetAllProductDTO>(ad));
     }
-    public bool UpdateProduct(int productId, UpdateProductDTO updateProductDTO)
+    public bool UpdateProduct(int productId, GetAllProductDTO getAllProductDTO)
     {
         Product product = repository.GetById(productId);
 
         if(product == null)
             return false;
 
-        product.Name = updateProductDTO.Name;
-        product.UnitPrice = updateProductDTO.UnitPrice;
-        product.UnitsInStock = updateProductDTO.UnitsInStock; 
+        product.Name = getAllProductDTO.Name;
+        product.UnitPrice = getAllProductDTO.UnitPrice;
+        product.UnitsInStock = getAllProductDTO.UnitsInStock; 
         
         return repository.SaveChanges() == 1;
     }
+
+          public List<GetAllProductDTO> GetPagination(int count, int pageNum)
+    {
+        var productList = repository.GetAll().Skip(count * (pageNum - 1)).Take(count)
+                .Select(p => new GetAllProductDTO { Name = p.Name, UnitPrice = p.UnitPrice, CategoryID = p.CategoryID }).ToList();
+        return productList;
+    }
+
+   
 }

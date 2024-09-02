@@ -23,9 +23,9 @@ public class AppDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         var configuration = new ConfigurationBuilder()
-                .SetBasePath(AppContext.BaseDirectory)
-                .AddJsonFile(@"D:\ITI\Advance C#\Project\Context\AppSettings.json", optional: false, reloadOnChange: true)
-                .Build();
+               .SetBasePath(AppContext.BaseDirectory)
+               .AddJsonFile(@"D:\ITI\Advance C#\Project\Context\AppSettings.json", optional: false, reloadOnChange: true)
+               .Build();
 
 
         base.OnConfiguring(optionsBuilder);

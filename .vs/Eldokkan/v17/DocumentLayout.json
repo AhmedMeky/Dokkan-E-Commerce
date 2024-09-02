@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\ITI\\Advance C#\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|d:\\iti\\advance c#\\project\\pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\frontend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\iti\\advance c#\\project\\pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|d:\\iti\\advance c#\\project\\pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\iti\\advance c#\\project\\pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|d:\\iti\\advance c#\\project\\pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\Eldokkan.pl.csproj|solutionrelative:pl\\dashborad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\iti\\advance c#\\project\\pl\\dashborad.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\dashborad.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|d:\\iti\\advance c#\\project\\pl\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BEB36A-5F1D-4223-9411-74F00979AD66}|PL\\PL.csproj|solutionrelative:pl\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,40 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrontEnd.cs [Design]",
-              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\PL\\FrontEnd.cs",
-              "RelativeDocumentMoniker": "PL\\FrontEnd.cs",
-              "ToolTip": "D:\\ITI\\Advance C#\\Project\\PL\\FrontEnd.cs [Design]",
-              "RelativeToolTip": "PL\\FrontEnd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T23:10:15.568Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dashborad.cs",
-              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.cs",
-              "RelativeDocumentMoniker": "PL\\Dashborad.cs",
-              "ToolTip": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.cs",
-              "RelativeToolTip": "PL\\Dashborad.cs",
-              "ViewState": "AgIAAKcBAAAAAAAAAAAYwLUBAABOAAAAAAAAAA==",
+              "Title": "Dashborad.Designer.cs",
+              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.Designer.cs",
+              "RelativeDocumentMoniker": "PL\\Dashborad.Designer.cs",
+              "ToolTip": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.Designer.cs",
+              "RelativeToolTip": "PL\\Dashborad.Designer.cs",
+              "ViewState": "AgIAALAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T19:31:43.985Z",
+              "WhenOpened": "2024-09-02T00:43:28.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Dashborad.cs [Design]",
               "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.cs",
               "RelativeDocumentMoniker": "PL\\Dashborad.cs",
               "ToolTip": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.cs [Design]",
               "RelativeToolTip": "PL\\Dashborad.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T17:25:07.462Z",
+              "WhenOpened": "2024-09-02T00:10:58.512Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashborad.cs",
+              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.cs",
+              "RelativeDocumentMoniker": "PL\\Dashborad.cs",
+              "ToolTip": "D:\\ITI\\Advance C#\\Project\\PL\\Dashborad.cs",
+              "RelativeToolTip": "PL\\Dashborad.cs",
+              "ViewState": "AgIAANsBAAAAAAAAAAAkwO4BAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T23:57:18.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\ITI\\Advance C#\\Project\\PL\\Login.cs",
+              "RelativeDocumentMoniker": "PL\\Login.cs",
+              "ToolTip": "D:\\ITI\\Advance C#\\Project\\PL\\Login.cs",
+              "RelativeToolTip": "PL\\Login.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAArwEEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T23:49:07.932Z",
+              "EditorCaption": ""
             }
           ]
         }

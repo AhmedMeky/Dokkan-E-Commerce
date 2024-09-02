@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FDWJzhOhTkI=",
+  "dgSpecHash": "SImGSe2JE8w=",
   "success": true,
-  "projectFilePath": "D:\\ITI\\Advance C#\\Project\\PL\\Eldokkan.pl.csproj",
+  "projectFilePath": "D:\\ITI\\Advance C#\\Project\\PL\\PL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dream\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\dream\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",

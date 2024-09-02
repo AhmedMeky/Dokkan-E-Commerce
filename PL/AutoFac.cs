@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using AutoMapper;
- 
+using ELDOKKAN.Context;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IContainer = Autofac.IContainer;
+using ELDOKKAN.Repositories;
 using ELDOKKAN.Application.Services;
 using ELDOKKAN.Application.Mapper;
 using ELDOKKAN.Context;
@@ -17,33 +19,39 @@ namespace Eldokkan.pl
 {
     public class AutoFac
     {
-        public static IContainer Inject()
+        public static Autofac.IContainer Inject()
         {
-            var Builder = new ContainerBuilder();
+            var builder = new ContainerBuilder();
 
-            Builder.RegisterType<ProductService>().As<IProductService>();
-            Builder.RegisterType<ProductRepository>().As<IProductRepository>();
-            Builder.RegisterType<AdminService>().As<IAdminService>();
-            Builder.RegisterType<AdminRepository>().As<IAdminRepository>();
-             Builder.RegisterType<CustomerService>().As<ICustomerService>();
-             Builder.RegisterType<CustomerRepository>().As<ICustomerRepository>();
-            Builder.RegisterType<CategoryService>().As<ICategoryService>();
-            Builder.RegisterType<CategoryRepository>().As<ICategoryRepository>();
-            Builder.RegisterType<OrderDetailsService>().As<IOrderDetailsService>();
-            Builder.RegisterType<OrderDetailsRepository>().As<IOrderDetailsRepository>();
-            Builder.RegisterType<OrderService>().As<IOrderService>();
-            Builder.RegisterType<OrderRepository>().As<IOrderRepository>();
-            Builder.RegisterType<AppDbContext>().As<AppDbContext>();
+            builder.RegisterType<ProductService>().As<IProductService>();
 
-            Builder.Register(c => new MapperConfiguration(cfg =>
+            builder.RegisterType<ProductRepository>().As<IProductRepository>();
+            builder.RegisterType<AdminService>().As<IAdminService>();
+            builder.RegisterType<AdminRepository>().As<IAdminRepository>();
+             builder.RegisterType<CustomerService>().As<ICustomerService>();
+             builder.RegisterType<CustomerRepository>().As<ICustomerRepository>();
+            builder.RegisterType<CategoryService>().As<ICategoryService>();
+            builder.RegisterType<CategoryRepository>().As<ICategoryRepository>();
+            builder.RegisterType<OrderDetailsService>().As<IOrderDetailsService>();
+            builder.RegisterType<OrderDetailsRepository>().As<IOrderDetailsRepository>();
+            builder.RegisterType<OrderService>().As<IOrderService>();
+            builder.RegisterType<OrderRepository>().As<IOrderRepository>();
+            builder.RegisterType<AppDbContext>().As<AppDbContext>();
+
+            builder.RegisterType<ProductService>().As<IProductService>().InstancePerLifetimeScope();
+            builder.RegisterType<ProductRepository>().As<IProductRepository>();
+            builder.RegisterType<AppDbContext>().As<AppDbContext>();
+
+            builder.Register(c => new MapperConfiguration(cfg =>
             {
                 // Register AutoMapper profile
                 cfg.AddProfile<AutoMapperProfile>();
             }));//.AsSelf().SingleInstance();
 
-            Builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve)).As<IMapper>();//.InstancePerLifetimeScope();
+            builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve)).As<IMapper>().InstancePerLifetimeScope();
+            builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve)).As<IMapper>();//.InstancePerLifetimeScope();
 
-            return Builder.Build();
+            return builder.Build();
 
         }
     }
