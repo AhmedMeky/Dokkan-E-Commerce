@@ -296,14 +296,14 @@ namespace PL
 
         private void OrderDetailes_Click(object sender, EventArgs e)
         {
-              int OrderID = OrderService.GetAllOrders().Where(p => p.CustomerID == CustomerID.ToString()).Select(p=>p.OrderID).FirstOrDefault();
+            int OrderID = OrderService.GetAllOrders().Where(p => p.CustomerID == CustomerID.ToString()).Select(p => p.OrderID).FirstOrDefault();
 
-            var OrderList = CartList.GroupBy(p => p.ProductID); 
+            var OrderList = CartList.GroupBy(p => p.ProductID);
 
             foreach (var order in OrderList)
             {
                 string o = order.Select(p => p.Name).FirstOrDefault();
-                int productID = productservice.GetAllProducts().Where(p=>p.Name == o).Select(p=>p.ProductID).FirstOrDefault();
+                int productID = productservice.GetAllProducts().Where(p => p.Name == o).Select(p => p.ProductID).FirstOrDefault();
                 CreateOrderDetailsDTO DtoDetailes = new CreateOrderDetailsDTO()
                 {
                     OrderStatus = OrderStatus.Processing,
@@ -314,26 +314,31 @@ namespace PL
                 };
 
                 OrderDetsService.AddOrderDetails(DtoDetailes);
+                MessageBox.Show("Order added");
             }
-               
-            
-       }
-            private void BillBtn_Click(object sender, EventArgs e)
-            {
-                decimal? price = 0;
-                foreach (var item in CartList)
-                {
-                    if (price != null)
-                        price += item.UnitPrice;
-                }
-                DialogResult massege = MessageBox.Show($"Your Bill = {price}$ ");
 
-                if (massege == DialogResult.OK)
-                {
-                    CreateOrderDTO dto = new() { CustomerID = CustomerID.ToString(), OrderDate = DateTime.Now };
-                    OrderService.AddOrder(dto);
-                }
-            }
 
         }
-    } 
+        private void BillBtn_Click(object sender, EventArgs e)
+        {
+            decimal? price = 0;
+            foreach (var item in CartList)
+            {
+                if (price != null)
+                    price += item.UnitPrice;
+            }
+            DialogResult massege = MessageBox.Show($"Your Bill = {price}$ ");
+
+            if (massege == DialogResult.OK)
+            {
+                CreateOrderDTO dto = new() { CustomerID = CustomerID.ToString(), OrderDate = DateTime.Now };
+                OrderService.AddOrder(dto);
+            }
+        }
+
+        private void FrontEnd_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(); 
+        }
+    }
+} 

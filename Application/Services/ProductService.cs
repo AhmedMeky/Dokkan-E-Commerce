@@ -63,7 +63,7 @@ public class ProductService : IProductService
 
           public List<GetAllProductDTO> GetPagination(int count, int pageNum)
     {
-        var productList = repository.GetAll().Skip(count * (pageNum - 1)).Take(count)
+        var productList = repository.GetAll().Where(p => p.UnitsInStock > 0).Skip(count * (pageNum - 1)).Take(count)
                 .Select(p => new GetAllProductDTO { Name = p.Name, UnitPrice = p.UnitPrice, CategoryID = p.CategoryID }).ToList();
         return productList;
     }
